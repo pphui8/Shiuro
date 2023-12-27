@@ -1,0 +1,32 @@
+.container-fluid {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}
+.container-fluid .hidden_box #in_text1,
+.container-fluid .hidden_box #in_text2 {
+    transform: translate(0, -100%);
+    transition: 0s;
+    opacity: 0;
+}
+.container-fluid .hidden_box #in_text3 {
+    transform: translate(0, 100%);
+    transition: 0s;
+    opacity: 0;
+}
+.container-fluid .hidden_box h1 {
+    color: white;
+    font-size: 66px;
+}
+.container-fluid p {
+    color: rgb(253, 253, 253);
+    user-select: none;
+}
