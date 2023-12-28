@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: `pphui8.github.io`,
-    default: `pphui8: personal website of pphui8`,
+    default: `pphui8`,
   },
   description: 'personal website of pphui8',
   keywords: `pphui8,pphui,Jinhui,湫月汐,个人网站`,
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
     },
     description: `pphui8: personal website of pphui8`,
     siteName: `pphui8.github.io`,
-    locale: 'zh_CN',
+    locale: 'en_US',
     type: 'website',
     url: `pphui8.com`,
     images: {
-      url: `http://q1.qlogo.cn/g?b=qq&nk=1292750686&s=640`,
+      url: '',
       username: 'pphui8',
     },
   },

@@ -1,33 +1,29 @@
 'use client'
 
+import Image from 'next/image'
 import styles from './page.module.css'
+import Profile_img from '../../public/profile.jpg'
+import motion from 'framer-motion'
 
 export default function Home() {
   return (
-    <>
-      <div className="load_interface"></div>
-      <div className={styles.container_fluid}>
-          <h1>pphui8</h1>
-          <p>太陽よりも輝くのだ</p>
+    <div className={styles.center_card}>
+      <div className={styles.intro_card}>
+        <div className={styles.text_row}>
+          <p>hi, I`m</p>
+          <p className={styles.name}>pphui8</p>
+        </div>
+        <div className={styles.text_row}>
+          <p>Graduate student of</p>
+          <p className={styles.profession}>Artificial Intelligence</p>
+        </div>
+        <div className={styles.text_row}>
           <p>@pphui8</p>
+        </div>
       </div>
-      <section className="footer icons" id="footer_trans">
-          <a href="mailto:hakase@pphui8.com">
-              <i className="fa fa-envelope" title="Email"></i>
-          </a>
-
-          <a href="https://github.com/pphui8">
-              <i className="fa fa-github" title="Github"></i>
-          </a>
-
-          <a href="https://twitter.com/pphui8">
-              <i className="fa fa-twitter" title="twitter"></i>
-          </a>
-
-          <a href="http://wpa.qq.com/msgrd?v=3&uin=1292750686&site=qq&menu=yes">
-              <i className="fa fa-qq" title="QQ"></i>
-          </a>
-      </section>
-    </>
+      <div className={styles.profile_img}>
+        <Image src={Profile_img} alt={'profile'} width={200} height={200}></Image>
+      </div>
+    </div>
   )
 }
