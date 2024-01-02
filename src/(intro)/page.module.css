@@ -1,0 +1,11 @@
+.MidContainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    background: rgb(244,244,245);
+    background: linear-gradient(0deg, rgba(244,244,245,1) 0%, rgba(255,240,205,1) 100%, rgba(255,238,203,1) 100%);
+}

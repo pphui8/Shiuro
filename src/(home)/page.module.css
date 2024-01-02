@@ -6,6 +6,8 @@
     align-items: center;
     align-content: center;
     height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(41deg, rgba(244,244,245,1) 0%, rgba(57,197,187,0.2) 100%, rgb(87, 223, 250) 100%);
 }
 
 .intro_card {
@@ -31,17 +33,19 @@
 .text_row .profession {
     font-weight: bolder;
     margin-left: 10px;
-
+    text-wrap: nowrap;
 }
 
 .profile_img {
     height: 200px;
     width: 200px;
     padding: 0px 60px 0px 60px;
+    user-select: none;
 }
 
 .profile_img img {
     border-radius: 50%;
     border: 1px solid #ddd;
+    user-select: none;
     -webkit-user-drag: none;
 }

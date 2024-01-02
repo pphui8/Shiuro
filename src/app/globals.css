@@ -11,21 +11,5 @@ html {
 }
 
 body {
-    overflow: hidden;
     height: 100%;
-}
-
-body::after {
-    background: rgb(255,255,255);
-    background: linear-gradient(41deg, rgba(255,255,255,1) 0%, rgba(57,197,187,0.2) 100%, rgba(0,212,255,1) 100%);
-    content: "";
-    background-position: center center;
-    background-size: cover;
-    position: absolute;
-    top: -30px;
-    bottom: -30px;
-    left: -30px;
-    right: -30px;
-    filter: blur(10px);
-    z-index: -1;
 }
