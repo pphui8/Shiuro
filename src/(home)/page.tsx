@@ -11,11 +11,11 @@ export default function HomePage() {
           <p className={styles.name}>pphui8</p>
         </div>
         <div className={styles.text_row}>
-          <p>Graduate student of</p>
-          <p className={styles.profession}>Artificial Intelligence</p>
+          <p>Graduate student of &nbsp;</p>
+          <p className={styles.profession}>{`<Artificial Intelligence/>`}</p>
         </div>
         <div className={styles.text_row}>
-          <p>@pphui8</p>
+          <p className={styles.at}>@pphui8</p>
         </div>
       </div>
       <div className={styles.profile_img}>
