@@ -1,4 +1,7 @@
-## Personal Website v2.0
+# Shiuro
+
+Personal Website V2.0
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/pphui8/Shiuro/main/public/pphui8.ico" alt="Profile" height=50 >
@@ -7,19 +10,19 @@
 
 > ### Inspired by [Shiro](https://github.com/Innei/Shiro)
 
-### Features
+###  :sparkles: Features
 
 ---
 
-- **Full SSO**
+- **Full Single Sign-On (SSO) :lock: :**
 
-- **Lighthouse 100 Score:**
+- **Lighthouse 100 Score :rocket: :**
 
-- **Super Fast:**
+- **Super Fast :zap: :**
 
-- **Easy Deployment with (GitHub Pages)[GitHub Pages](https://pages.github.com/):**
+- **Easy Deployment with GitHub Pages :globe_with_meridians: :**
 
-### Quick Start
+### :rocket: Getting Started
 
 ---
 
@@ -28,9 +31,9 @@ Follow these steps to get your personal website up and running:
 1. Clone the repository:
 [TODO]
 
-### License
+### :hammer_and_wrench: License
 This project is licensed under the MIT License.
 
-### Acknowledgments
+### :sparkles: Acknowledgements
 Special thanks to Shiro for the inspiration behind this project.
 Feel free to explore, contribute, and showcase your personality through your personal website. Let's build a vibrant online presence together!
