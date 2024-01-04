@@ -11,7 +11,7 @@ export default function HomePage() {
           <p className={styles.name}>pphui8</p>
         </div>
         <div className={styles.text_row}>
-          <p>Graduate student of &nbsp;</p>
+          <p>Graduate student of</p>
           <p className={styles.profession}>{`<Artificial Intelligence/>`}</p>
         </div>
         <div className={styles.text_row}>

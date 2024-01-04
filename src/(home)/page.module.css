@@ -33,7 +33,8 @@
 .text_row .profession {
     font-weight: normal;
     text-wrap: nowrap;
-    padding: 0px 6px 4px 6px;
+    padding: 0px 4px 4px 4px;
+    margin-left: 5px;
 }
 
 .text_row .profession:hover {
