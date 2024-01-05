@@ -2,8 +2,11 @@
 
 const env = process.env.NODE_ENV
 const nextConfig = {
-    // if in production mode, add output: "export",
     output: env === 'production' ? 'export' : undefined,
+    webpack: (config) => {
+      config.resolve.fallback = { fs: false };
+      return config;
+    },
 }
 
 module.exports = nextConfig

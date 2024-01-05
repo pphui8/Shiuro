@@ -1,0 +1,3 @@
+[submodule "public/pphui8"]
+	path = public/pphui8
+	url = git@github.com:pphui8/pphui8.git
