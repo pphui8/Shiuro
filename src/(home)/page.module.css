@@ -3,11 +3,11 @@
         opacity: 0;
     }
     20% {
-        opacity: .8;
+        opacity: .6;
         transform: translateY(3px);
     }
     80% {
-        opacity: 1;
+        opacity: .6;
         transform: translateY(3px);
     }
     100% {
@@ -48,7 +48,7 @@
 }
 
 .text_row .profession {
-    font-weight: normal;
+    font-weight: bolder;
     text-wrap: nowrap;
     padding: 0px 4px 4px 4px;
     margin-left: 5px;
@@ -81,10 +81,34 @@
     -webkit-user-drag: none;
 }
 
+.icon_container {
+    height: 40px;
+    width: 100%;
+}
+
+.icon_container a {
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.icon_container a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.icon_container a i::before {
+    color: #ffffff;
+}
+
 .bottom_container {
     display: block;
     position: absolute;
-    bottom: 16px;
+    bottom: 25px;
     width: 80px;
     height: 42px;
     transform: translateX(-40px);
@@ -95,15 +119,19 @@
     width: 100%;
     height: 14px;
     text-align: center;
-    color: #8EC5FC;
+    font-size: large;
+}
+
+.bottom_container div i::before {
+    color: #39c5bcbe;
 }
 
 .bottom_container div:nth-child(2) {
     animation-delay: 0.2s;
 }
 .bottom_container div:nth-child(3) {
-    font-size: larger;
     animation-delay: 0.4s;
+    font-size: x-large;
 }
 .animation {
     animation: animate 2s ease-in-out infinite;

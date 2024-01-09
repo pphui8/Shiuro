@@ -3,7 +3,6 @@
     padding: 0;
     cursor: url("../../public/cursor.png"), default;
     list-style: none;
-    overflow-y: none;
 }
 
 html {
@@ -12,4 +11,13 @@ html {
 
 body {
     height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
