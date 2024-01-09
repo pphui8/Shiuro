@@ -6,6 +6,6 @@
     align-items: center;
     align-content: center;
     height: 100vh;
-    background: rgb(216,255,167);
-    background: linear-gradient(0deg, rgba(216,255,167,0.13) 0%, rgba(198,209,103,0) 59%, rgba(255,250,218,0.2) 100%);
+    background: rgb(172,137,249);
+    background: linear-gradient(0deg, rgba(172,137,249,0.14) 0%, rgba(255,255,255,0) 52%, rgba(216,255,167,0.13) 100%);
 }

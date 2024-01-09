@@ -38,10 +38,12 @@ export default function HomePage() {
           <p className={styles.at}>@pphui8</p>
         </div>
         <div className={styles.icon_container}>
-          <Link href=""><i className='mgc_github_line'></i></Link>
-          <Link href=""><i className='mgc_github_line'></i></Link>
-          <Link href=""><i className='mgc_github_line'></i></Link>
-          <Link href=""><i className='mgc_github_line'></i></Link>
+          <Link href="https://github.com/pphui8"><i className='mgc_github_line'></i></Link>
+          <Link href=""><i className='mgc_meta_line'></i></Link>
+          <Link href=""><i className='mgc_mail_line'></i></Link>
+          <Link href=""><i className='mgc_twitter_line'></i></Link>
+          <Link href=""><i className='mgc_qrcode_2_line'></i></Link>
+          <Link href=""><i className='mgc_telegram_line' /></Link>
         </div>
       </div>
       <div className={styles.profile_img}>
