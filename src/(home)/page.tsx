@@ -1,8 +1,27 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
+import { IoIosArrowDown } from "react-icons/io";
+import { useEffect, useState } from 'react';
 
 export default function HomePage() {
+
+  const [showChild, setShowChild] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100 && showChild) {
+        setShowChild(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [showChild]);
+  
   return (
     <div className={styles.center_card}>
       <div className={styles.intro_card}>
@@ -20,6 +39,15 @@ export default function HomePage() {
       </div>
       <div className={styles.profile_img}>
         <Image priority src={Profile_img} alt={'profile'} width={200} height={200}></Image>
+      </div>
+      <div className={styles.bottom_container}>
+      {showChild && (
+        <>
+          <div className={styles.animation}><IoIosArrowDown/></div>
+          <div className={styles.animation}><IoIosArrowDown/></div>
+          <div className={styles.animation}><IoIosArrowDown/></div>
+        </>
+      )}
       </div>
     </div>
   )
