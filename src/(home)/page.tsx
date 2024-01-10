@@ -27,7 +27,7 @@ export default function HomePage() {
     <div className={styles.center_card}>
       <div className={styles.intro_card}>
         <div className={styles.text_row}>
-          <p>hi, I`m</p>
+          <p>Hi, I`m</p>
           <p className={styles.name}>pphui8</p>
         </div>
         <div className={styles.text_row}>
@@ -39,9 +39,9 @@ export default function HomePage() {
         </div>
         <div className={styles.icon_container}>
           <Link href="https://github.com/pphui8"><i className='mgc_github_line'></i></Link>
-          <Link href=""><i className='mgc_meta_line'></i></Link>
-          <Link href=""><i className='mgc_mail_line'></i></Link>
-          <Link href=""><i className='mgc_twitter_line'></i></Link>
+          <Link href="https://www.facebook.com/profile.php?id=100030115839920"><i className='mgc_meta_line'></i></Link>
+          <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'></i></Link>
+          <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'></i></Link>
           <Link href=""><i className='mgc_qrcode_2_line'></i></Link>
           <Link href=""><i className='mgc_telegram_line' /></Link>
         </div>

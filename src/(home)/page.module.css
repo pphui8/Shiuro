@@ -96,7 +96,7 @@
     text-align: center;
     text-decoration: none;
     font-size: x-large;
-    line-height: 43px;
+    line-height: 40px;
 }
 
 .icon_container a:not(:first-child) {
@@ -113,7 +113,6 @@
     bottom: 25px;
     width: 80px;
     height: 42px;
-    transform: translateX(-20px);
 }
 
 .bottom_container div {
