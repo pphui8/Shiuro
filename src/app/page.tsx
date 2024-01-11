@@ -12,7 +12,7 @@ export default function page() {
       theme={{
         components: {
           Popover: {
-            lineHeight: .8,
+            lineHeight: 1,
             colorBgElevated: 'rgba(0, 0, 0, 0.2)',
           },
         },
