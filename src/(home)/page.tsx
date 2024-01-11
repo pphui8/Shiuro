@@ -4,7 +4,7 @@ import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
 import { useEffect, useState } from 'react';
 import 'mingcute_icon/font/Mingcute.css'
-import { Popover } from 'antd';
+import { Popover, QRCode } from 'antd';
 
 export default function HomePage() {
 
@@ -39,22 +39,22 @@ export default function HomePage() {
           <p className={styles.at}>@pphui8</p>
         </div>
         <div className={styles.icon_container}>
-          <Popover placement='bottomLeft' content="Github" arrow={false}>
+          <Popover placement='bottomLeft' content="Github" >
             <Link href="https://github.com/pphui8"><i className='mgc_github_line'></i></Link>
           </Popover>
-          <Popover placement='bottomLeft' content="Faceboook" arrow={false}>
+          <Popover placement='bottomLeft' content="Faceboook" >
             <Link href="https://www.facebook.com/profile.php?id=100030115839920"><i className='mgc_meta_line'></i></Link>
           </Popover>
-          <Popover placement='bottomLeft' content="Email" arrow={false} >
+          <Popover placement='bottomLeft' content="Email" >
             <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'></i></Link>
           </Popover>
-          <Popover placement='bottomLeft' content="Twitter" arrow={false} >
+          <Popover placement='bottomLeft' content="Twitter" >
             <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'></i></Link>
           </Popover>
-          <Popover placement='bottomLeft' content="QR code" arrow={false} >
+          <Popover placement='bottomLeft' overlayInnerStyle={{ padding: 0 }} content={<QRCode value='https://pphui8.com' bordered={false} />}>
             <Link href=""><i className='mgc_qrcode_2_line'></i></Link>
           </Popover>
-          <Popover placement='bottomLeft' content="Telegram" arrow={false} >
+          <Popover placement='bottomLeft' content="Telegram" >
             <Link href=""><i className='mgc_telegram_line' /></Link>
           </Popover>
         </div>
