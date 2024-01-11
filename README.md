@@ -8,7 +8,9 @@ Personal Website V2.0
 </p>
 
 
-> ### Inspired by [Shiro](https://github.com/Innei/Shiro)
+> Inspired by [Shiro](https://github.com/Innei/Shiro)
+
+> [Live Demo](https://pphui8.com)
 
 ###  :sparkles: Features
 
@@ -33,7 +35,3 @@ Follow these steps to get your personal website up and running:
 
 ### :hammer_and_wrench: License
 This project is licensed under the MIT License.
-
-### :sparkles: Acknowledgements
-Special thanks to Shiro for the inspiration behind this project.
-Feel free to explore, contribute, and showcase your personality through your personal website. Let's build a vibrant online presence together!

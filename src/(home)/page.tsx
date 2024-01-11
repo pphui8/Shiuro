@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
 import { useEffect, useState } from 'react';
 import 'mingcute_icon/font/Mingcute.css'
+import { Popover } from 'antd';
 
 export default function HomePage() {
 
@@ -38,12 +39,24 @@ export default function HomePage() {
           <p className={styles.at}>@pphui8</p>
         </div>
         <div className={styles.icon_container}>
-          <Link href="https://github.com/pphui8"><i className='mgc_github_line'></i></Link>
-          <Link href="https://www.facebook.com/profile.php?id=100030115839920"><i className='mgc_meta_line'></i></Link>
-          <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'></i></Link>
-          <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'></i></Link>
-          <Link href=""><i className='mgc_qrcode_2_line'></i></Link>
-          <Link href=""><i className='mgc_telegram_line' /></Link>
+          <Popover placement='bottomLeft' content="Github" arrow={false}>
+            <Link href="https://github.com/pphui8"><i className='mgc_github_line'></i></Link>
+          </Popover>
+          <Popover placement='bottomLeft' content="Faceboook" arrow={false}>
+            <Link href="https://www.facebook.com/profile.php?id=100030115839920"><i className='mgc_meta_line'></i></Link>
+          </Popover>
+          <Popover placement='bottomLeft' content="Email" arrow={false} >
+            <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'></i></Link>
+          </Popover>
+          <Popover placement='bottomLeft' content="Twitter" arrow={false} >
+            <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'></i></Link>
+          </Popover>
+          <Popover placement='bottomLeft' content="QR code" arrow={false} >
+            <Link href=""><i className='mgc_qrcode_2_line'></i></Link>
+          </Popover>
+          <Popover placement='bottomLeft' content="Telegram" arrow={false} >
+            <Link href=""><i className='mgc_telegram_line' /></Link>
+          </Popover>
         </div>
       </div>
       <div className={styles.profile_img}>

@@ -1,5 +1,6 @@
 'use client'
 
+import { ConfigProvider } from 'antd'
 import HomePage from '../(home)/page'
 import Foot from '../(foot)/page'
 import Intro from '../(intro)/page'
@@ -7,7 +8,16 @@ import Intro from '../(intro)/page'
 
 export default function page() {
   return (
-    <>
+    <ConfigProvider
+      theme={{
+        components: {
+          Popover: {
+            lineHeight: .8,
+            colorBgElevated: 'rgba(0, 0, 0, 0.2)',
+          },
+        },
+      }}
+    >
       <section className='section'>
         <HomePage />
       </section>
@@ -17,6 +27,6 @@ export default function page() {
       <section className='section'>
         <Foot />
       </section>
-    </>
+    </ConfigProvider>
   )
 }
