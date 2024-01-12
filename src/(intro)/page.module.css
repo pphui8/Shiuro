@@ -11,8 +11,8 @@
 }
 
 .windows {
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
     border-radius: 10px;
     background: white;
     overflow: hidden;
@@ -43,9 +43,6 @@
     align-items: flex-end;
     flex-wrap: nowrap;
     width: 100%;
-    /* TODO: bug here */
-    /* max-width: 100%; */
-    padding-right: 10px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -74,6 +71,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     width: 100%;
+    max-width: 170px;
     padding: 10px 15px;
     position: relative;
     background: white;
@@ -83,11 +81,9 @@
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    min-width: 0;
     overflow: hidden;
     position: relative;
     user-select: none;
-    max-width: 250px;
 }
 
 .windows li span {
@@ -96,10 +92,13 @@
     line-height: 18px;
     white-space: nowrap;
     display: block;
-    min-width: 0;
     padding-right: 30px;
     mask-image: linear-gradient(to left, transparent 20px, #fff 40px);
     -webkit-mask-image: linear-gradient(to left, transparent 20px, #fff 40px);
+}
+
+.windows li span i {
+    font-size: medium;
 }
 
 .windows li .close {

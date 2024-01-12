@@ -1,10 +1,9 @@
 import * as React from "react";
 import { motion, Reorder } from "framer-motion";
-import { Ingredient } from "./ingredients";
-import { CloseIcon } from "./CloseIcon";
+import { Pages } from "./pages";
 
 interface Props {
-  item: Ingredient;
+  item: Pages;
   isSelected: boolean;
   onClick: () => void;
   onRemove: () => void;
@@ -27,7 +26,7 @@ export const Tab = ({ item, onClick, onRemove, isSelected }: Props) => {
       className={isSelected ? "selected" : ""}
       onPointerDown={onClick}
     >
-      <motion.span layout="position">{`${item.icon} ${item.label}`}</motion.span>
+      <motion.span layout="position"><i className={'mgc_' + item.icon}/>{`  ${item.label}`}</motion.span>
       <motion.div layout className="close">
         <motion.button
           onPointerDown={(event) => {
@@ -37,7 +36,7 @@ export const Tab = ({ item, onClick, onRemove, isSelected }: Props) => {
           initial={false}
           animate={{ backgroundColor: isSelected ? "#e3e3e3" : "#fff" }}
         >
-          <CloseIcon />
+          <i className="mgc_close_line"/>
         </motion.button>
       </motion.div>
     </Reorder.Item>

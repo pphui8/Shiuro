@@ -2,13 +2,12 @@ import { AnimatePresence, Reorder, motion } from 'framer-motion'
 import styles from './page.module.css'
 import { useState } from 'react';
 import { Tab } from "./Tab";
-import { AddIcon } from "./AddIcon";
 import {
-  allIngredients,
-  Ingredient,
+  allPages,
+  Pages,
   initialTabs,
   getNextIngredient,
-} from "./ingredients";
+} from "./pages";
 import { removeItem, closestItem } from "./array-utils";
 
 
@@ -17,7 +16,7 @@ export default function Intro() {
   const [tabs, setTabs] = useState(initialTabs);
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
-  const remove = (item: Ingredient) => {
+  const remove = (item: Pages) => {
     if (item === selectedTab) {
       setSelectedTab(closestItem(tabs, item));
     }
@@ -60,10 +59,10 @@ export default function Intro() {
           <motion.button
             className="add-item"
             onClick={add}
-            disabled={tabs.length === allIngredients.length}
+            disabled={tabs.length === allPages.length}
             whileTap={{ scale: 0.9 }}
           >
-            <AddIcon />
+            <i className='mgc_add_line'/>
           </motion.button>
         </nav>
         <main>
@@ -75,7 +74,7 @@ export default function Intro() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.15 }}
             >
-              {selectedTab ? selectedTab.icon : "😋"}
+              {selectedTab ? <i className={'mgc_' + selectedTab.icon}/> : "404!"}
             </motion.div>
           </AnimatePresence>
         </main>
