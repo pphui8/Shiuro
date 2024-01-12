@@ -3,7 +3,7 @@ import styles from './page.module.css'
 import { useRef } from 'react';
 
 
-export default function intro() {
+export default function Intro() {
 
   const constraintsRef = useRef(null);
   
