@@ -10,7 +10,7 @@ export default function Intro() {
   return (
     <div className={styles.mid_container}>
       <motion.div className={styles.screen} ref={constraintsRef}>
-        <motion.div className={styles.windows} drag dragConstraints={constraintsRef} />
+        <motion.div className={styles.windows} drag dragConstraints={constraintsRef} dragMomentum={false} />
       </motion.div>
     </div>
   )
