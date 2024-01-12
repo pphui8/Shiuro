@@ -10,20 +10,145 @@
     background: linear-gradient(0deg, rgba(216,255,167,0.13) 20%, rgba(103,209,194,0) 49%, rgba(57,197,187,0.1) 100%);
 }
 
-.screen {
+.windows {
     width: 90%;
     height: 80%;
-    display: flex;
-    place-content: center;
-    place-items: center;
+    border-radius: 10px;
+    background: white;
     overflow: hidden;
-    background: rgba(81, 255, 0, 0.2);
-    border-radius: 30px;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+    display: flex;
+    flex-direction: column;
 }
 
-.screen .windows {
-    width: 150px;
-    height: 150px;
-    background: rgb(255, 0, 0);
-    border-radius: inherit;
+.windows nav {
+    background: #fdfdfd;
+    padding: 5px 5px 0;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid #eeeeee;
+    height: 44px;
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    overflow: hidden;
+}
+
+.tabs {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    width: 100%;
+    /* TODO: bug here */
+    /* max-width: 100%; */
+    padding-right: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.windows main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 128px;
+    flex-grow: 1;
+    user-select: none;
+}
+
+.windows li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    padding: 10px 15px;
+    position: relative;
+    background: white;
+    cursor: pointer;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    max-width: 250px;
+}
+
+.windows li span {
+    flex-shrink: 1;
+    flex-grow: 1;
+    line-height: 18px;
+    white-space: nowrap;
+    display: block;
+    min-width: 0;
+    padding-right: 30px;
+    mask-image: linear-gradient(to left, transparent 20px, #fff 40px);
+    -webkit-mask-image: linear-gradient(to left, transparent 20px, #fff 40px);
+}
+
+.windows li .close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.windows li button {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    stroke: #000;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+}
+  
+.add-item {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    align-self: center;
+}
+
+.add-item:disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
 }
