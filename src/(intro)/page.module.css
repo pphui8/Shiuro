@@ -30,10 +30,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 1px solid #eeeeee;
-    height: 44px;
-    display: grid;
-    grid-template-columns: 1fr 35px;
-    overflow: hidden;
+    height: 91px;
 }
 
 .tabs {
@@ -76,7 +73,7 @@
     position: relative;
     background: white;
     cursor: pointer;
-    height: 24px;
+    height: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,19 +132,38 @@
     width: 300px;
     background: #fff;
 }
-  
-.add-item {
-    width: 30px;
-    height: 30px;
-    background: #eee;
-    border-radius: 50%;
-    border: 0;
-    cursor: pointer;
-    align-self: center;
+
+.search_bar_container {
+    width: 100%;
+    height: 44px;
 }
 
-.add-item:disabled {
-    opacity: 0.4;
-    cursor: default;
-    pointer-events: none;
+.search_bar_container i {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    margin: 7px;
+    text-align: center;
+    font-size: larger;
+    line-height: 32px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search_bar_container i:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.search_bar_container .search_intput_bar {
+    display: inline-block;
+    width: calc(100% - 98px);
+    height: calc(100% - 13px);
+    border-radius: 20px;
+    transform: translateY(-3px);
+    border: none;
+    background-color: rgb(243, 243, 243);
+    cursor: text;
+    font-family: "Poppins", sans-serif;
+    text-indent: 1em;
+    font-size: 14px;
 }

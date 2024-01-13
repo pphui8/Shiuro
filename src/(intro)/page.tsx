@@ -9,6 +9,7 @@ import {
   getNextIngredient,
 } from "./pages";
 import { removeItem, closestItem } from "./array-utils";
+import { Address } from './Address';
 
 
 export default function Intro() {
@@ -56,14 +57,17 @@ export default function Intro() {
               ))}
             </AnimatePresence>
           </Reorder.Group>
-          <motion.button
+          {/* <motion.button
             className="add-item"
             onClick={add}
             disabled={tabs.length === allPages.length}
             whileTap={{ scale: 0.9 }}
           >
             <i className='mgc_add_line'/>
-          </motion.button>
+          </motion.button> */}
+          <Address path={''} setPath={function (path: string): void {
+            throw new Error('Function not implemented.');
+          } } />
         </nav>
         <main>
           <AnimatePresence mode="wait">

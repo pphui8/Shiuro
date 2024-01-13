@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import qrcode from '../../public/QRcode.svg'
 import Link from 'next/link';
 import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
@@ -40,9 +41,6 @@ export default function HomePage() {
         <div className={styles.icon_container}>
           <Popover placement='bottomLeft' content="Github" >
             <Link href="https://github.com/pphui8"><i className='mgc_github_line'/></Link>
-          </Popover>
-          <Popover placement='bottomLeft' content="Faceboook" >
-            <Link href="https://www.facebook.com/profile.php?id=100030115839920"><i className='mgc_meta_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Email" >
             <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'/></Link>
