@@ -30,7 +30,12 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 1px solid #eeeeee;
-    height: 91px;
+    height: 81px;
+}
+
+.tab_container {
+    height: 38px;
+    width: 100%;
 }
 
 .tabs {
@@ -140,8 +145,8 @@
 
 .search_bar_container i {
     display: inline-block;
-    height: 35px;
-    width: 35px;
+    height: 33px;
+    width: 33px;
     margin: 7px;
     text-align: center;
     font-size: larger;

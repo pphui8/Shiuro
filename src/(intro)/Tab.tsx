@@ -17,12 +17,13 @@ export const Tab = ({ item, onClick, onRemove, isSelected }: Props) => {
       initial={{ opacity: 0, y: 30 }}
       animate={{
         opacity: 1,
-        backgroundColor: isSelected ? "#f3f3f3" : "#fff",
+        backgroundColor: isSelected ? "#fff" : "#f3f3f3",
         y: 0,
         transition: { duration: 0.15 }
       }}
+      whileHover={{ opacity: 0.7 }}
       exit={{ opacity: 0, y: 20, transition: { duration: 0.3 } }}
-      whileDrag={{ backgroundColor: "#e3e3e3" }}
+      whileDrag={{ backgroundColor: "#fcfcfc" }}
       className={isSelected ? "selected" : ""}
       onPointerDown={onClick}
     >

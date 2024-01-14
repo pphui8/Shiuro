@@ -11,11 +11,3 @@ export const allPages = [
 ];
   
 export const initialTabs = allPages.slice(0, 2);
-  
-export function getNextIngredient(
-  ingredients: Pages[]
-): Pages | undefined {
-  const existing = new Set(ingredients);
-  return allPages.find((ingredient) => !existing.has(ingredient));
-}
-  
