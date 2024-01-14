@@ -129,6 +129,19 @@
     flex-shrink: 0;
 }
 
+.windows .new_window {
+    border: none;
+    height: 28px;
+    width: 28px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.windows .new_window:hover {
+    background-color: rgb(219, 219, 219);
+}
+
 .background {
     position: absolute;
     top: 0;

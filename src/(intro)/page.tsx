@@ -24,14 +24,18 @@ export default function Intro() {
     setTabs(removeItem(tabs, item));
   };
 
-  // const add = () => {
-  //   const nextItem = getNextIngredient(tabs);
+  const add = () => {
+    // const nextItem = getNextIngredient(tabs);
 
-  //   if (nextItem) {
-  //     setTabs([...tabs, nextItem]);
-  //     setSelectedTab(nextItem);
-  //   }
-  // };
+    // if (nextItem) {
+    //   setTabs([...tabs, nextItem]);
+    //   setSelectedTab(nextItem);
+    // }
+  };
+
+  const new_window = () => {
+    console.log('new_window')
+  };
 
   const setPath = (path: string) => {
     if (path === '') {
@@ -66,17 +70,17 @@ export default function Intro() {
                     onRemove={() => remove(item)}
                   />
                 ))}
+                <motion.button
+                  className={styles.new_window}
+                  onClick={new_window}
+                  disabled={tabs.length === allPages.length}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <i className='mgc_add_line'/>
+                </motion.button>
               </AnimatePresence>
             </Reorder.Group>
           </div>
-          {/* <motion.button
-            className="add-item"
-            onClick={add}
-            disabled={tabs.length === allPages.length}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className='mgc_add_line'/>
-          </motion.button> */}
           <Address path={selectedTab ? 'https://pphui8.com' + selectedTab.path : ''} setPath={setPath}/>
         </nav>
         <main>
