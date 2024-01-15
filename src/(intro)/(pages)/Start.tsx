@@ -1,5 +1,5 @@
-export const Tab = () => {
+export const Start = () => {
   return (
-    <></>
+    <>Start</>
   );
 };

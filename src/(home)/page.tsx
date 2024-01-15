@@ -48,11 +48,14 @@ export default function HomePage() {
           <Popover placement='bottomLeft' content="Twitter" >
             <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'/></Link>
           </Popover>
+          <Popover placement='bottomLeft' content="Instagram" >
+            <Link href="https://www.instagram.com/pphuihui8/"><i className='mgc_ins_line'/></Link>
+          </Popover>
           <Popover placement='bottomLeft' overlayInnerStyle={{ padding: 0 }} content={<QRCode value='https://pphui8.com' bordered={false} />}>
-            <Link href=""><i className='mgc_qrcode_2_line'/></Link>
+            <Link href="#"><i className='mgc_qrcode_2_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Telegram" >
-            <Link href=""><i className='mgc_telegram_line' /></Link>
+            <Link href="https://t.me/pphui8"><i className='mgc_telegram_line' /></Link>
           </Popover>
         </div>
       </div>

@@ -4,9 +4,11 @@ import styles from "./page.module.css";
 interface AddressProps {
     path: string;
     setPath: (path: string) => void;
+    backHome: () => void;
+    search: () => void;
 }
 
-export const Address = ({ path, setPath }: AddressProps) => {
+export const Address = ({ path, setPath, backHome, search }: AddressProps) => {
 
   const [inputValue, setInputValue] = useState(path);
 
@@ -16,7 +18,7 @@ export const Address = ({ path, setPath }: AddressProps) => {
   
   return (
     <div className={styles.search_bar_container}>
-        <i className="mgc_home_4_line"/>
+        <i className="mgc_home_4_line" onClick={backHome}/>
         <input
           className={styles.search_intput_bar}
           type="text"
