@@ -185,3 +185,8 @@
     text-indent: 1em;
     font-size: 14px;
 }
+
+.windows_container {
+    width: 100%;
+    height: 100%;
+}

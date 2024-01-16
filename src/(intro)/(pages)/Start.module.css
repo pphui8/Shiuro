@@ -1,0 +1,106 @@
+.center_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 44px;
+    border-radius: 30px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: rgba(0,0,0,.2) 0 0 8px 4px;
+    transition: all 0.7s ease-in-out;
+}
+
+.search_container:hover {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.search_container:hover .engine_icon_container {
+    opacity: 1;
+}
+
+.search_container:focus-within {
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.search-container:focus-within .engine_icon_container {
+    opacity: 1;
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    overflow: hidden;
+    background-color: #ffffff00;
+    text-align: center;
+    caret-color: #4f4f4f;
+    color: #4f4f4f;
+    margin-left: 35px;
+}
+
+.search_container:hover .search_input {
+    width: 100% - 20px;
+}
+
+.search_container:focus-within .search_input {
+    width: 100% - 20px;
+}
+
+.search_icon_container {
+    width: 5%;
+    height: 100%;
+    transition: all 0.1s ease-in-out;
+    margin-right: 15px;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+}
+
+.search_container:hover .search_icon_container {
+    opacity: 1;
+}
+
+.search_container:focus-within .search_icon_container {
+    opacity: 1;
+}
+
+.search_container svg {
+    width: 20px;
+    height: 20px;
+    fill: #504d4d;
+}
+
+.shortcut_container {
+    display: flex;
+    flex-direction: row wrap;
+    margin-top: 50px;
+    background-color: #39c5bb;
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.shortcut_item {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    font-size: xxx-large;
+}

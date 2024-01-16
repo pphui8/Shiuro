@@ -104,7 +104,7 @@ export default function Intro() {
         </nav>
         <main>
           <AnimatePresence mode="wait">
-            <motion.div
+            <motion.div className={styles.windows_container}
               key={selectedTab ? selectedTab.label : "empty"}>
               {
                 function MyComponent() {
