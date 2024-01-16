@@ -146,6 +146,7 @@
     backdrop-filter: blur(3px);
     box-shadow: rgba(0,0,0,.2) 2px 2px 3px 2px;
     width: 80%;
+    max-width: 480px;
     border-radius: 20px;
     z-index: 1;
 }
