@@ -20,6 +20,7 @@ export const Address = ({ path, setPath, backHome, search }: AddressProps) => {
     <div className={styles.search_bar_container}>
         <i className="mgc_home_4_line" onClick={backHome}/>
         <input
+          id="url_search_input"
           className={styles.search_intput_bar}
           type="text"
           value={inputValue}

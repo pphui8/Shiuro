@@ -48,6 +48,10 @@ export default function Intro() {
     setSelectedTab(newItem);
   };
 
+  const setCurPage = (path: string) => {
+    console.log("path:", path);
+  }
+
   const backHome = () => {
     if(selectedTab.path === '/start') return;
     tabs.find((item) => item.id === selectedTab.id)!.icon = 'home_4_line';
@@ -113,7 +117,7 @@ export default function Intro() {
                   } else {
                     switch(selectedTab.path) {
                       case '/start':
-                        return <Start/>;
+                        return <Start setCurPage={setCurPage}/>;
                       case '/about':
                         return <About/>;
                       default:
