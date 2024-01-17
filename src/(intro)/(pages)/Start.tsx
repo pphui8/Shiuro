@@ -8,7 +8,7 @@ export const Start = ({ setCurPage }: Props) => {
 
   const toOtherPage = () => {
     const content = (document.querySelector('#search_input') as HTMLInputElement)?.value;
-    setCurPage(content);
+    setCurPage('/' + content);
   }
 
   const setPlaceholder = (content: string) => {
@@ -19,7 +19,6 @@ export const Start = ({ setCurPage }: Props) => {
     <div className={styles.center_container}>
        <div className={styles.background_image}/>
       <div className={styles.search_container}>
-        {/* <input type="text" id="search-input" className="search-input" onfocus="this.placeholder=''" onblur="this.placeholder='Search'" placeholder="Search" /> */}
         <div className={styles.search_url_container}>
           <p className={styles.url}>https://ppuhi8.com/</p>
         </div>

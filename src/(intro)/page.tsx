@@ -49,7 +49,26 @@ export default function Intro() {
   };
 
   const setCurPage = (path: string) => {
-    console.log("path:", path);
+    if(path === selectedTab.path) return;
+    // console.log("not current tab, jumping to", path)
+    const item = allPages.find((item) => item.path === path);
+    // console.log(allPages)
+    // console.log(item)
+    if (item) {
+      // console.log("page matched, jumping to: ", item)
+      tabs.find((item) => item.id === selectedTab.id)!.icon = item.icon;
+      tabs.find((item) => item.id === selectedTab.id)!.label = item.label;
+      tabs.find((item) => item.id === selectedTab.id)!.path = item.path;
+      setTabs([...tabs]);
+    } else {
+      // to 404
+      // console.log("page not matched, jumping to 404")
+      const notFoundItem = allPages.find((item) => item.path === '/404');
+      tabs.find((item) => item.id === selectedTab.id)!.icon = notFoundItem!.icon;
+      tabs.find((item) => item.id === selectedTab.id)!.label = notFoundItem!.label;
+      tabs.find((item) => item.id === selectedTab.id)!.path = notFoundItem!.path;
+      setTabs([...tabs]);
+    }
   }
 
   const backHome = () => {
@@ -58,17 +77,6 @@ export default function Intro() {
     tabs.find((item) => item.id === selectedTab.id)!.label = 'Start';
     tabs.find((item) => item.id === selectedTab.id)!.path = '/start';
     setTabs([...tabs]);
-  }
-
-  const setPath = (path: string) => {
-    if (path === '') {
-      setSelectedTab(tabs[0]);
-    } else {
-      const item = tabs.find((item) => item.path === path);
-      if (item) {
-        setSelectedTab(item);
-      }
-    }
   }
   
   return (
@@ -96,7 +104,6 @@ export default function Intro() {
                 <motion.button
                   className={styles.new_window}
                   onClick={newWindow}
-                  disabled={tabs.length === allPages.length}
                   whileTap={{ scale: 0.9 }}
                 >
                   <i className='mgc_add_line'/>
@@ -104,7 +111,7 @@ export default function Intro() {
               </AnimatePresence>
             </Reorder.Group>
           </div>
-          <Address path={selectedTab ? 'https://pphui8.com' + selectedTab.path : ''} setPath={setPath} backHome={backHome} search={() => {}}/>
+          <Address path={selectedTab ? 'https://pphui8.com' + selectedTab.path : ''} setCurPage={setCurPage}/>
         </nav>
         <main>
           <AnimatePresence mode="wait">
@@ -113,13 +120,15 @@ export default function Intro() {
               {
                 function MyComponent() {
                   if(selectedTab === undefined) {
-                    return '<Start/>';
+                    return 'somewhere nothitng';
                   } else {
                     switch(selectedTab.path) {
                       case '/start':
                         return <Start setCurPage={setCurPage}/>;
                       case '/about':
                         return <About/>;
+                      case '/this_site':
+                        return "this site";
                       default:
                         return <Error404/>;
                     }
