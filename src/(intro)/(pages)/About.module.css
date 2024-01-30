@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.center_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.aboutme_article {
+    font-size: large;
+}
+
+.aboutme_article p {
+    line-height: 1.5;
+    word-wrap: break-word;
+}
