@@ -6,8 +6,8 @@ export const About = () => {
     return (
         <div className={styles.container}>
             <div className={styles.center_container}>
-                <div className={styles.profile_img}>
-                    <Image priority src={Profile_img} alt={'profile'} width={200} height={200}></Image>
+                <div className={styles.profile_img_container}>
+                    <Image priority className={styles.profile_img} src={Profile_img} alt={'profile'} width={200} height={200}></Image>
                 </div>
                 <article className={styles.aboutme_article}>
                     <p>hi, I`m pphui8.</p>
