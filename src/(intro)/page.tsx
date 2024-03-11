@@ -50,33 +50,20 @@ export default function Intro() {
 
   const setCurPage = (path: string) => {
     if(path === selectedTab.path) return;
-    // console.log("not current tab, jumping to", path)
     const item = allPages.find((item) => item.path === path);
-    // console.log(allPages)
-    // console.log(item)
     if (item) {
-      // console.log("page matched, jumping to: ", item)
       tabs.find((item) => item.id === selectedTab.id)!.icon = item.icon;
       tabs.find((item) => item.id === selectedTab.id)!.label = item.label;
       tabs.find((item) => item.id === selectedTab.id)!.path = item.path;
       setTabs([...tabs]);
     } else {
       // to 404
-      // console.log("page not matched, jumping to 404")
       const notFoundItem = allPages.find((item) => item.path === '/404');
       tabs.find((item) => item.id === selectedTab.id)!.icon = notFoundItem!.icon;
       tabs.find((item) => item.id === selectedTab.id)!.label = notFoundItem!.label;
       tabs.find((item) => item.id === selectedTab.id)!.path = notFoundItem!.path;
       setTabs([...tabs]);
     }
-  }
-
-  const backHome = () => {
-    if(selectedTab.path === '/start') return;
-    tabs.find((item) => item.id === selectedTab.id)!.icon = 'home_4_line';
-    tabs.find((item) => item.id === selectedTab.id)!.label = 'Start';
-    tabs.find((item) => item.id === selectedTab.id)!.path = '/start';
-    setTabs([...tabs]);
   }
   
   return (
@@ -120,7 +107,7 @@ export default function Intro() {
               {
                 function MyComponent() {
                   if(selectedTab === undefined) {
-                    return 'somewhere nothitng';
+                    return <Error404/>;
                   } else {
                     switch(selectedTab.path) {
                       case '/start':

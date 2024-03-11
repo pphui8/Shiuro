@@ -60,6 +60,7 @@
     font-size: 128px;
     flex-grow: 1;
     user-select: none;
+    overflow-y: auto;
 }
 
 .windows li {

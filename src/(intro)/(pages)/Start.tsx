@@ -34,10 +34,10 @@ export const Start = ({ setCurPage }: Props) => {
         </div>
       </div>
       <div className={styles.shortcut_container}>
-        <div className={styles.shortcut_item}><i className='mgc_home_4_line'/></div>
-        <div className={styles.shortcut_item}><i className='mgc_user_1_line'/></div>
-        <div className={styles.shortcut_item}><i className='mgc_cloud_line'/></div>
-        <div className={styles.shortcut_item}><i className='mgc_add_line'/></div>
+        <div className={styles.shortcut_item} onClick={() => setCurPage("/home")}><i className='mgc_home_4_line'/></div>
+        <div className={styles.shortcut_item} onClick={() => setCurPage("/about")}><i className='mgc_user_1_line'/></div>
+        <div className={styles.shortcut_item} onClick={() => setCurPage("/this_site")}><i className='mgc_cloud_line'/></div>
+        <div className={styles.shortcut_item} ><i className='mgc_add_line'/></div>
       </div>
     </div>
   );

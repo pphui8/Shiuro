@@ -29,7 +29,7 @@ export const About = () => {
                     <p>👨‍💻 🦀 || Go || TypeScipt || Cpp || Python</p>
                     <p>🎹 Loving piano, fan of Animenzzz</p>
                     <picture>
-                        <img className={styles.github_status} src="https://github-readme-stats.vercel.app/api?username=pphui8&count_private=true&show_icons=true&border_color=39c5bb)](https://github.com/anuraghazra/github-readme-stats" />
+                        <img className={styles.github_status} src="https://github-readme-stats.vercel.app/api?username=pphui8&count_private=true&show_icons=true&border_color=39c5bb)](https://github.com/anuraghazra/github-readme-stats" style={{maxWidth: "425px", maxHeight: "180px"}}/>
                     </picture>
                 </article>
             </div>
