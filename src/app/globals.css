@@ -11,13 +11,10 @@ html {
 
 body {
     height: 100%;
+    font-family: __Manrope_26b30e,__Manrope_Fallback_26b30e,system-ui,-apple-system,PingFang SC,"Microsoft YaHei",Segoe UI,Roboto,Helvetica,noto sans sc,hiragino sans gb,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Not Color Emoji;
+    -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
     display: none;
-}
-  
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }

@@ -15,6 +15,6 @@ export const allPages = [
 ];
   
 export const initialTabs = [
-  { id: nanoid(), icon: "home_4_line", label: "Start", path: "/start" },
   { id: nanoid(), icon: "user_1_line", label: "About me", path: "/about" },
+  { id: nanoid(), icon: "home_4_line", label: "Start", path: "/start" },
 ]
