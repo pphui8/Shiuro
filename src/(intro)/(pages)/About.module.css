@@ -8,13 +8,12 @@
     position: absolute;
     width: 95%;
     max-width: 1200px;
-    height: calc(100% - 40px);
+    height: calc(90% - 20px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 0%;
 }
 
 .profile_img_container {

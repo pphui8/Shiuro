@@ -13,6 +13,7 @@ import { Address } from './Address';
 import { Start } from './(pages)/Start';
 import { About } from './(pages)/About';
 import { Error404 } from './(pages)/404';
+import { Code } from './(pages)/Code';
 
 
 export default function Intro() {
@@ -116,6 +117,8 @@ export default function Intro() {
                         return <About/>;
                       case '/this_site':
                         return "this site";
+                      case '/code':
+                        return <Code/>;
                       default:
                         return <Error404/>;
                     }
