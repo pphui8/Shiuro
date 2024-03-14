@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     url: `pphui8.com`,
     images: {
-      url: '',
+      url: 'https://q1.qlogo.cn/g?b=qq&nk=1216595344&s=640',
       username: 'pphui8',
     },
   },
@@ -48,6 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `pphui8.github.io`,
     description: `pphui8: personal website of pphui8`,
+    image: 'https://q1.qlogo.cn/g?b=qq&nk=1216595344&s=640'
   },
 }
 
