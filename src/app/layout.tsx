@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: `pphui8.github.io`,
+    template: `pphui8.com`,
     default: `pphui8`,
   },
   description: 'personal website of pphui8',
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: {
-      default: `pphui8.github.io`,
-      template: `pphui8.github.io`,
+      default: `pphui8.com`,
+      template: `pphui8.com`,
     },
-    description: `pphui8: personal website of pphui8`,
-    siteName: `pphui8.github.io`,
+    description: `Personal website of pphui8`,
+    siteName: `pphui8.com`,
     locale: 'en_US',
     type: 'website',
     url: `pphui8.com`,
@@ -46,9 +46,12 @@ export const metadata: Metadata = {
   twitter: {
     creator: `pphui8`,
     card: 'summary_large_image',
-    title: `pphui8.github.io`,
-    description: `pphui8: personal website of pphui8`,
-    image: 'https://q1.qlogo.cn/g?b=qq&nk=1216595344&s=640'
+    title: `湫月汐`,
+    description: `Personal website of pphui8`,
+    images: {
+      url: 'https://q1.qlogo.cn/g?b=qq&nk=1216595344&s=640',
+      username: 'pphui8',
+    }
   },
 }
 
