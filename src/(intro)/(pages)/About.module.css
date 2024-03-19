@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
+    white-space: nowrap;
     text-align: center;
 }
 
@@ -12,7 +13,7 @@
     white-space: normal;
     text-align: left;
     vertical-align: top;
-    transform: translateY(30px);
+    transform: translateY(18%);
 }
 
 .profile_img {
@@ -24,12 +25,25 @@
     -webkit-user-drag: none;
 }
 
-.vcard .vcard_fullname {
+.status {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 16px;
+    transform: translate(168px, -75px);
+    color: #000;
+}
+
+.vcard_fullname {
     font-size: 24px;
     line-height: 1.25;
 }
 
-.vcard .vcard_username {
+.vcard_username {
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -61,8 +75,9 @@
     border-width: max(1px, 0.0625rem);
     padding: 25px 20px 20px 25px;
     text-align: left;
+    white-space: normal;
     vertical-align: top;
-    transform: translateY(30px);
+    transform: translateY(15%);
 }
 
 .aboutme_article p {
@@ -97,4 +112,35 @@
 .aboutme_article .github_status {
     margin-top: 10px;
     width: 70%;
+}
+
+.mobile_profile {
+    display: block;
+    height: 300px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.mobile_name_container {
+    display: inline-block;
+    transform: translate(18px, -25px);
+}
+
+.status_bar {
+    display: block;
+    width: 98%;
+    height: 20px;
+    padding: 4px 8px 4px 8px;
+    font-size: 17px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transform: translateY(-15px);
+}
+
+.status_bar text{
+    margin-left: 10px;
+    font-size: 13px;
+    vertical-align: 3px;
 }
