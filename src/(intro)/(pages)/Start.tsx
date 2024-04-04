@@ -38,6 +38,7 @@ export const Start = ({ setCurPage }: Props) => {
         <div className={styles.shortcut_item} onClick={() => setCurPage("/about")}><i className='mgc_user_1_line'/></div>
         <div className={styles.shortcut_item} onClick={() => setCurPage("/this_site")}><i className='mgc_cloud_line'/></div>
         <div className={styles.shortcut_item} onClick={() => setCurPage("/code")}><i className='mgc_code_line'/></div>
+        <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}><i className='mgc_microscope_line'/></div>
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ import { Start } from './(pages)/Start';
 import { About } from './(pages)/About';
 import { Error404 } from './(pages)/404';
 import { Code } from './(pages)/Code';
+import { This_site } from './(pages)/This_site';
+import { Research } from './(pages)/Research';
 
 
 export default function Intro() {
@@ -27,15 +29,6 @@ export default function Intro() {
     }
 
     setTabs(removeItem(tabs, item));
-  };
-
-  const add = () => {
-    // const nextItem = getNextIngredient(tabs);
-
-    // if (nextItem) {
-    //   setTabs([...tabs, nextItem]);
-    //   setSelectedTab(nextItem);
-    // }
   };
 
   const newWindow = () => {
@@ -116,9 +109,11 @@ export default function Intro() {
                       case '/about':
                         return <About/>;
                       case '/this_site':
-                        return "this site";
+                        return <This_site/>;
                       case '/code':
                         return <Code/>;
+                      case '/research':
+                        return <Research/>;
                       default:
                         return <Error404/>;
                     }
