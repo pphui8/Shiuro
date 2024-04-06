@@ -8,7 +8,7 @@ Lightweight, easy to deploy personal website.
 </p>
 
 
-> [pphui8.com](https://pphui8.com)
+> [pphui8.com](https://pphui8.com)  
 > [Github](https://github.com/pphui8/Shiuro)
 
 ###  :sparkles: Features
