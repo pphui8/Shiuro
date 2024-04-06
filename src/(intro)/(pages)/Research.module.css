@@ -25,12 +25,6 @@
     vertical-align: top;
 }
 
-.aboutme_article .subtitle {
-    font-size: 1.25em;
-    margin-top: 24px;
-    margin-bottom: 16px;
-}
-
 .aboutme_article p {
     line-height: 1.5;
     word-wrap: break-word;
@@ -58,4 +52,9 @@
 .aboutme_article p {
     font-size: 14px;
     margin-bottom: 5px;
+}
+
+.aboutme_article .github_status {
+    margin-top: 10px;
+    width: 70%;
 }
