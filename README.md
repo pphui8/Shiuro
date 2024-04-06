@@ -1,6 +1,6 @@
 # Shiuro
 
-Personal Website V2.0
+Lightweight, easy to deploy personal website.
 
 
 <p align="center">
@@ -8,9 +8,7 @@ Personal Website V2.0
 </p>
 
 
-> Inspired by [Shiro](https://github.com/Innei/Shiro)
-
-> [Live Demo](https://pphui8.com)
+> [pphui8.com](https://pphui8.com)
 
 ###  :sparkles: Features
 
@@ -30,8 +28,12 @@ Personal Website V2.0
 
 Follow these steps to get your personal website up and running:
 
+
 1. Clone the repository:
 [TODO]
 
 ### :hammer_and_wrench: License
 This project is licensed under the MIT License.
+
+### special thanks
+*Inspired by [Shiro](https://github.com/Innei/Shiro)
