@@ -6,7 +6,7 @@ export const Code = () => {
             <div className={styles.center_container}>
                 <article className={styles.aboutme_article}>
                     <p className={styles.filepath}>pphui8/code.md</p>
-                    <p className={styles.hi}>About this site</p>
+                    <p className={styles.hi}>My projects</p>
                     <hr className={styles.line} />
                     <p>TODO</p>
                 </article>

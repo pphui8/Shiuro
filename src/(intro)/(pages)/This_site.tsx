@@ -10,11 +10,11 @@ export const This_site = () => {
                     <p>Lightweight, easy to deploy personal website.</p>
                     <hr className={styles.line} />
                     <p className={styles.subtitle}>✨ Features</p>
-                    <p>- **Full Single Sign-On (SSO) 🔒 :**</p>
-                    <p>- **Lighthouse 100 Score 🚀 :**</p>
-                    <p>- **Super Fast ⚡ :**</p>
-                    <p>- **Easy Deployment with GitHub Pages 🌐 :**</p>
-                    <p>**🚀 Getting Started**</p>
+                    <p>- Full Single Sign-On (SSO) 🔒 :</p>
+                    <p>- Lighthouse 100 Score 🚀 :</p>
+                    <p>- Super Fast ⚡ :</p>
+                    <p>- Easy Deployment with GitHub Pages 🌐 :</p>
+                    <p className={styles.subtitle}>🚀 Getting Started</p>
                 </article>
             </div>
         </div>
