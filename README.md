@@ -3,13 +3,14 @@
 Lightweight, easy to deploy personal website.
 
 
-<p align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/pphui8/Shiuro/main/public/pphui8.ico" alt="Profile" height=50 >
-</p>
+</div>
 
-
-> [pphui8.com](https://pphui8.com)  
-> [Github](https://github.com/pphui8/Shiuro)
+<div align="center">
+  <a href="https://pphui8.com">pphui8.com</a>
+  <a href="https://github.com/pphui8/Shiuro">Github</a>
+</div>
 
 ###  :sparkles: Features
 
@@ -37,4 +38,4 @@ Follow these steps to get your personal website up and running:
 This project is licensed under the MIT License.
 
 ### special thanks
-*Inspired by [Shiro](https://github.com/Innei/Shiro)
+Inspired by [Shiro](https://github.com/Innei/Shiro)
