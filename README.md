@@ -16,13 +16,13 @@ Lightweight, easy to deploy personal website.
 
 ---
 
-- **Full Single Sign-On (SSO) :lock: :**
+- **Full Single Sign-On (SSO) :lock: ;**
 
-- **Lighthouse 100 Score :rocket: :**
+- **Lighthouse 100 Score :rocket: ;**
 
-- **Super Fast :zap: :**
+- **Super Fast :zap: ;**
 
-- **Easy Deployment with GitHub Pages :globe_with_meridians: :**
+- **Easy Deployment with GitHub Pages :globe_with_meridians: ;**
 
 ### :rocket: Getting Started
 
@@ -32,7 +32,8 @@ Follow these steps to get your personal website up and running:
 
 
 1. Clone the repository:
-[TODO]
+2. Change the desciption words
+3. Deploy by following [Github Actions](https://docs.github.com/en/actions)
 
 ### :hammer_and_wrench: License
 This project is licensed under the MIT License.
