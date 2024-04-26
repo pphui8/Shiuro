@@ -33,6 +33,7 @@ export const Address = ({ path, setCurPage}: AddressProps) => {
           className={styles.search_intput_bar}
           type="text"
           value={inputValue}
+          autoComplete="off"
           onChange={(e) => {
             setInputValue(e.target.value)
           }}

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import qrcode from '../../public/QRcode.svg'
 import Link from 'next/link';
 import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
