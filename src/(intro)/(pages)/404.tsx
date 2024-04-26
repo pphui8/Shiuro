@@ -1,6 +1,6 @@
 import styles from './404.module.css'
 import Image from 'next/image'
-import NotfoundImage from '../../../public/404_notfonud.png'
+import NotfoundImage from '../../../public/NotFound.png'
 
 export const Error404 = () => {
     return (
