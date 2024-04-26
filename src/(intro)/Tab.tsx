@@ -26,6 +26,12 @@ export const Tab = ({ item, onClick, onRemove, isSelected }: Props) => {
       whileDrag={{ backgroundColor: "#fcfcfc" }}
       className={isSelected ? "selected" : ""}
       onPointerDown={onClick}
+      onMouseDown={(event) => {
+        if (event.button === 1) {
+          event.preventDefault();
+          onRemove();
+        }
+      }}
     >
       <motion.span layout="position"><i className={'mgc_' + item.icon}/>{`  ${item.label}`}</motion.span>
       <motion.div layout className="close">

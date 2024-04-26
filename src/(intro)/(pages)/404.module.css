@@ -12,3 +12,9 @@
     font-size: 85px;
     text-align: center;
 }
+
+.copyright {
+    transform: translateX(-17px);
+    font-size: 15px;
+    list-style: none;
+}

@@ -2,6 +2,8 @@ import styles from './About.module.css'
 import Image from 'next/image'
 import Profile_img from '../../../public/profile.jpg'
 import { useMediaQuery } from 'react-responsive'
+import Link from 'next/link';
+import dynamic from 'next/dynamic';
 
 export const About = () => {
 
@@ -18,9 +20,9 @@ export const About = () => {
                 <p>💬 English && 日本語 && 中文 && 한국어</p>
                 <p>🧐 Research area: Knowledge Intensive Software Engineering</p>
                 <p>🍚 Favorite food: beef rice noodle and curry rice. コーラ最高</p>
-                <p>🎏 Welcome to my Website</p>
+                <p>🎏 Welcome to my <Link href={'https://pphui8.com'}>Website</Link></p>
                 <p>👨‍💻 🦀 || Go || TypeScipt || Cpp || Python</p>
-                <p>🎹 Loving piano, fan of Animenzzz</p>
+                <p>🎹 Loving piano, fan of <Link href={'https://www.youtube.com/c/Animenzzz'}>Animenzzz</Link></p>
                 <picture>
                     <img className={styles.github_status} src="https://github-readme-stats.vercel.app/api?username=pphui8&count_private=true&show_icons=true&border_color=39c5bb)](https://github.com/anuraghazra/github-readme-stats" style={{maxWidth: "425px", maxHeight: "180px", minWidth: "280px", minHeight: "130px"}}/>
                 </picture>
@@ -28,7 +30,6 @@ export const About = () => {
         </div>
     );
 };
-
 const WindowsView = () => {
     return (
         <div className={styles.profile_img_container}>
@@ -39,8 +40,8 @@ const WindowsView = () => {
                 <div className={styles.vcard_username}>pphui8</div>
                 <div className={styles.user_profile_bio}>Student of AI/太陽よりも暉くのだ！</div>
                 <div className={styles.more_info}><i className="mgc_location_line"/> 山奥</div>
-                <div className={styles.more_info}><i className="mgc_link_line"/> https://pphui8.com</div>
-                <div className={styles.more_info}><i className="mgc_social_x_line"/> @pphui8</div>
+                <div className={styles.more_info}><i className="mgc_link_line"/><Link href={'https://pphui8.com'}> https://pphui8.com</Link></div>
+                <div className={styles.more_info}><i className="mgc_social_x_line"/><Link href={'https://twitter.com/pphui8'}> @pphui8</Link></div>
             </div>
         </div>
     )
@@ -54,12 +55,12 @@ const MobileView = () => {
                 <div className={styles.vcard_fullname}>pphui8</div>
                 <div className={styles.vcard_username}>pphui8</div>
             </div>
-            <div className={styles.status_bar}><i className='mgc_book_6_line' /><text>studying</text></div>
+            <div className={styles.status_bar}><i className='mgc_book_6_line' /><div className={styles.studying}>studying</div></div>
             <div className={styles.vcard} style={{transform: "translateY(-13px)"}}>
                 <div className={styles.user_profile_bio}>Student of AI/太陽よりも暉くのだ！</div>
                 <div className={styles.more_info}><i className="mgc_location_line"/> 山奥</div>
-                <div className={styles.more_info}><i className="mgc_link_line"/> https://pphui8.com</div>
-                <div className={styles.more_info}><i className="mgc_social_x_line"/> @pphui8</div>
+                <div className={styles.more_info}><i className="mgc_link_line"/><Link href={'https://pphui8.com'}> https://pphui8.com</Link></div>
+                <div className={styles.more_info}><i className="mgc_social_x_line"/><Link href={'https://twitter.com/pphui8'}> @pphui8</Link></div>
             </div>
         </div>
     )

@@ -6,6 +6,19 @@
     text-align: center;
 }
 
+.container a {
+    text-decoration: none;
+}
+
+.container a:visited {
+    color: #000;
+}
+
+.container a:hover {
+    color: #0969da;
+    text-decoration: underline;
+}
+
 .profile_img_container {
     display: inline-block;
     margin-right: 15px;
@@ -139,7 +152,8 @@
     transform: translateY(-15px);
 }
 
-.status_bar text{
+.status_bar .studying{
+    display: inline-block;
     margin-left: 10px;
     font-size: 13px;
     vertical-align: 3px;
