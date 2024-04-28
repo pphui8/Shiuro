@@ -22,7 +22,7 @@ export const Start = ({ setCurPage }: Props) => {
         <div className={styles.search_url_container}>
           <p className={styles.url}>https://ppuhi8.com/</p>
         </div>
-        <input type="text"className={styles.search_input} placeholder="Search" onFocus={() => setPlaceholder('')} onBlur={() => setPlaceholder('Search')} id='search_input' onKeyDown={(e) => {
+        <input type="text"className={styles.search_input} autoComplete='off' placeholder="Search" onFocus={() => setPlaceholder('')} onBlur={() => setPlaceholder('Search')} id='search_input' onKeyDown={(e) => {
           if(e.key === 'Enter') {
             toOtherPage();
           }
@@ -37,8 +37,8 @@ export const Start = ({ setCurPage }: Props) => {
         <div className={styles.shortcut_item} onClick={() => setCurPage("/start")}><i className='mgc_home_4_line'/></div>
         <div className={styles.shortcut_item} onClick={() => setCurPage("/about")}><i className='mgc_user_1_line'/></div>
         <div className={styles.shortcut_item} onClick={() => setCurPage("/this_site")}><i className='mgc_cloud_line'/></div>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/code")}><i className='mgc_code_line'/></div>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}><i className='mgc_microscope_line'/></div>
+        {/* <div className={styles.shortcut_item} onClick={() => setCurPage("/code")}><i className='mgc_code_line'/></div> */}
+        {/* <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}><i className='mgc_microscope_line'/></div> */}
       </div>
     </div>
   );
