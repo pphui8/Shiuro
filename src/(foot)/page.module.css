@@ -11,7 +11,6 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    /* background-color: #39c5bb; */
 }
 
 .timelineContainer .titile {
@@ -19,10 +18,6 @@
     font-weight: 700;
     color: #39c5bb;
     margin-top: 2rem;
-}
-
-.timelines {
-
 }
 
 .timelineItem {
@@ -64,4 +59,27 @@
     border-radius: 50%;
     position: absolute;
     background-color: #39c5bb;
+}
+
+.iconContainer {
+    display: inline-block;
+    line-height: 1.6rem;
+    transform: translateY(4px);
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 1px solid #39c5bb;
+}
+
+.iconContainer i::before {
+    color: #39c5bb;
+}
+
+.time {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.description {
+    display: inline-block;
 }
