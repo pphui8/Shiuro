@@ -62,7 +62,9 @@
 }
 
 .iconContainer {
-    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
     line-height: 1.6rem;
     transform: translateY(4px);
     width: 19px;
