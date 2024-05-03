@@ -24,7 +24,8 @@
     position: relative;
     list-style: none;
     line-height: 1.6;
-    padding: 30px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin: 0 0 0 1rem;
 }
 
@@ -75,13 +76,18 @@
 
 .iconContainer i::before {
     color: #39c5bb;
+    font-size: 0.85em;
 }
 
 .time {
     display: inline-block;
     margin: 0 5px;
+    user-select: none;
+    transform: translateY(2px);
 }
 
 .description {
     display: inline-block;
+    user-select: none;
+    transform: translateY(2px);
 }
