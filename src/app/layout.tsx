@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: `pphui8`,
   },
   description: 'personal website of pphui8',
-  keywords: `pphui8,pphui,Jinhui,湫月汐,个人网站`,
+  keywords: `pphui8,湫月汐,pphui,Jinhui,个人网站`,
   icons: [
     {
       url: `/pphui8.ico`,
