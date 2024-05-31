@@ -42,6 +42,7 @@ export const Tab = ({ item, onClick, onRemove, isSelected }: Props) => {
           }}
           initial={false}
           animate={{ backgroundColor: isSelected ? "#e3e3e3" : "#fff" }}
+          aria-label="Close tab"
         >
           <i className="mgc_close_line"/>
         </motion.button>

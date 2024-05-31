@@ -34,6 +34,7 @@ export const Address = ({ path, setCurPage}: AddressProps) => {
           type="text"
           value={inputValue}
           autoComplete="off"
+          aria-label="search input"
           onChange={(e) => {
             setInputValue(e.target.value)
           }}

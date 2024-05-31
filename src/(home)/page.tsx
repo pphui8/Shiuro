@@ -39,22 +39,22 @@ export default function HomePage() {
         </div>
         <div className={styles.icon_container}>
           <Popover placement='bottomLeft' content="Github" >
-            <Link href="https://github.com/pphui8"><i className='mgc_github_line'/></Link>
+            <Link href="https://github.com/pphui8" aria-label='Github'><i className='mgc_github_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Email" >
-            <Link href="mailto:jh1216595344@gmail.com"><i className='mgc_mail_line'/></Link>
+            <Link href="mailto:jh1216595344@gmail.com" aria-label='Email'><i className='mgc_mail_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Twitter" >
-            <Link href="https://twitter.com/pphui8"><i className='mgc_twitter_line'/></Link>
+            <Link href="https://twitter.com/pphui8" aria-label='Twitter'><i className='mgc_twitter_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Instagram" >
-            <Link href="https://www.instagram.com/pphuihui8/"><i className='mgc_ins_line'/></Link>
+            <Link href="https://www.instagram.com/pphuihui8/" aria-label='Instagram'><i className='mgc_ins_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' overlayInnerStyle={{ padding: 0 }} content={<QRCode value='https://pphui8.com' bordered={false} />}>
-            <Link href="#"><i className='mgc_qrcode_2_line'/></Link>
+            <Link href="#" aria-label='QRCode'><i className='mgc_qrcode_2_line'/></Link>
           </Popover>
           <Popover placement='bottomLeft' content="Telegram" >
-            <Link href="https://t.me/pphui8"><i className='mgc_telegram_line' /></Link>
+            <Link href="https://t.me/pphui8" aria-label='Telegram'><i className='mgc_telegram_line' /></Link>
           </Popover>
         </div>
       </div>

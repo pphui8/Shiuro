@@ -82,13 +82,16 @@ export default function Intro() {
                     onRemove={() => remove(item)}
                   />
                 ))}
-                <motion.button
-                  className={styles.new_window}
-                  onClick={newWindow}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <i className='mgc_add_line'/>
-                </motion.button>
+                {/* <li > */}
+                  <motion.button
+                    className={styles.new_window}
+                    onClick={newWindow}
+                    whileTap={{ scale: 0.9 }}
+                    aria-label="New window"
+                  >
+                    <i className='mgc_add_line'/>
+                  </motion.button>
+                {/* </li> */}
               </AnimatePresence>
             </Reorder.Group>
           </div>
