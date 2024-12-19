@@ -6,9 +6,18 @@ export const Research = () => {
             <div className={styles.center_container}>
                 <article className={styles.aboutme_article}>
                     <p className={styles.filepath}>pphui8/research.md</p>
-                    <p className={styles.hi}>About this site</p>
-                    <hr className={styles.line} />
-                    <p>TODO</p>
+                    <div className={styles.research_box}>
+                        <div className={styles.research_box_SE}>
+                            <p>Software Engineering</p>
+                            <div className={styles.research_box_SE_sub_RE}>
+                                <p>Reqrements Engineering</p>
+                            </div>
+                        </div>
+                        <div className={styles.research_box_AI}>
+                            <p>Artificial Intelligence</p>
+                        </div>
+
+                    </div>
                 </article>
             </div>
         </div>

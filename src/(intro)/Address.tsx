@@ -18,9 +18,7 @@ export const Address = ({ path, setCurPage}: AddressProps) => {
     if(!inputValue.startsWith('https://pphui8.com')) {
       setCurPage('/404');
     } else {
-      // remove the prefix
       const path = inputValue.slice(18);
-      console.log("to path: ", path);
       setCurPage(path);
     }
   }
