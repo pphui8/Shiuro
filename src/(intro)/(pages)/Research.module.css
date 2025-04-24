@@ -109,3 +109,9 @@
     right: 20px;
     padding: 10px;
 }
+
+.research_box .research_box_AI .ME {
+    position: absolute;
+    top: 20px;
+    left:60px;
+}

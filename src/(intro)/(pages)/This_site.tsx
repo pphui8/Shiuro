@@ -1,5 +1,7 @@
 import styles from './This_site.module.css'
-import Link from 'next/link'
+import Image from 'next/image';
+import GitHubIcon from '/public/github.png';
+
 
 export const This_site = () => {
     return (
@@ -15,7 +17,9 @@ export const This_site = () => {
                     <p>- Lighthouse 100 Score 🚀 :</p>
                     <p>- Super Fast ⚡ :</p>
                     <p>- Easy Deployment with GitHub Pages 🌐 :</p>
-                    <p><Link href={'https://pphui8.com'}>Github</Link></p>
+                    <button className={styles.GithubIconButton}>
+                        <span className={styles.buttonText} onClick={() => window.open('https://github.com/pphui8/Shiuro', '_blank')}>to GitHub →</span>
+                    </button>
                 </article>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import styles from './Start.module.css'
+import { Popover } from 'antd';
 
 interface Props {
   setCurPage: (path: string) => void;
@@ -17,7 +18,7 @@ export const Start = ({ setCurPage }: Props) => {
   
   return (
     <div className={styles.center_container}>
-       <div className={styles.background_image}/>
+      <div className={styles.background_image}/>
       <div className={styles.search_container}>
         <div className={styles.search_url_container}>
           <p className={styles.url}>https://ppuhi8.com/</p>
@@ -34,10 +35,26 @@ export const Start = ({ setCurPage }: Props) => {
         </div>
       </div>
       <div className={styles.shortcut_container}>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/start")}><i className='mgc_home_4_line'/></div>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/about")}><i className='mgc_user_1_line'/></div>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/this_site")}><i className='mgc_cloud_line'/></div>
-        <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}><i className='mgc_mail_line'/></div>
+        <Popover placement='bottom' content="home page">
+          <div className={styles.shortcut_item} onClick={() => setCurPage("/search")}>
+            <i className='mgc_home_4_line'/>
+          </div>
+        </Popover>
+        <Popover placement='bottom' content="about me">
+          <div className={styles.shortcut_item} onClick={() => setCurPage("/about")}>
+            <i className='mgc_user_1_line'/>
+          </div>
+        </Popover>
+        <Popover placement='bottom' content="about this site">
+          <div className={styles.shortcut_item} onClick={() => setCurPage("/this_site")}>
+            <i className='mgc_cloud_line'/>
+          </div>
+        </Popover>
+        <Popover placement='bottom' content="my research">
+          <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}>
+            <i className='mgc_search_line'/>
+          </div>
+        </Popover>
       </div>
     </div>
   );

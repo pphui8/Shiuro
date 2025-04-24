@@ -8,7 +8,7 @@ export const Error404 = () => {
         <div className={styles.container}>
             <div className={styles.center_container}>
                 <Image src={NotfoundImage} alt={'404 not found'} width={333} height={187} />
-                <div className={styles.copyright}>Logo by <Link href='https://github.com/SAWARATSUKI/ServiceLogos'>@SAWARATSUKI</Link></div>
+                <div className={styles.copyright}>Logo by <Link href='https://github.com/SAWARATSUKI/KawaiiLogos'>@SAWARATSUKI</Link></div>
             </div>
         </div>
     );

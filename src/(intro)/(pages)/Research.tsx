@@ -14,9 +14,9 @@ export const Research = () => {
                             </div>
                         </div>
                         <div className={styles.research_box_AI}>
+                            <div className={styles.ME}>ME</div>
                             <p>Artificial Intelligence</p>
                         </div>
-
                     </div>
                 </article>
             </div>

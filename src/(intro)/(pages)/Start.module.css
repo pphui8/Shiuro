@@ -159,4 +159,11 @@
     border-radius: 15px;
     background-color: #ffffff;
     font-size: xxx-large;
+    transition: all 0.3s ease-in-out;
+}
+
+.shortcut_item:hover {
+    background-color: #ffffff;
+    box-shadow: rgba(0,0,0,.1) 0 0 8px 4px;
+    transition: all 0.3s ease-in-out;
 }
