@@ -1,9 +1,11 @@
-import { group } from 'console';
+'use client'
+
 import styles from './Research.module.css'
-import ForceGraph3D from 'react-force-graph-3d';
-import SpriteText from "three-spritetext";
-import * as THREE from 'three';
 import React from 'react';
+import dynamic from 'next/dynamic';
+import * as THREE from 'three';
+import SpriteText from 'three-spritetext';
+import ForceGraph3D from 'react-force-graph-3d';
 
 export const Research = () => {
     const data = {
@@ -54,28 +56,12 @@ export const Research = () => {
             { source: 'GANs', target: 'CycleGAN' },
         ],
     };
-
-    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-    const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
-    React.useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-            setWindowHeight(window.innerHeight);
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
     
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Research Interests</h1>
             <ForceGraph3D
                 graphData={data}
-                width={windowWidth}
-                height={windowHeight}
                 nodeLabel="name"
                 nodeAutoColorBy="group"
                 backgroundColor="#fcf5f7"

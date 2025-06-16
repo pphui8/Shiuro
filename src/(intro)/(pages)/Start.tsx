@@ -52,7 +52,7 @@ export const Start = ({ setCurPage }: Props) => {
         </Popover>
         <Popover placement='bottom' content="my research">
           <div className={styles.shortcut_item} onClick={() => setCurPage("/research")}>
-            <i className='mgc_search_line'/>
+            <i className='mgc_microscope_line'/>
           </div>
         </Popover>
       </div>

@@ -15,8 +15,12 @@ import { About } from './(pages)/About';
 import { Error404 } from './(pages)/404';
 import { Code } from './(pages)/Code';
 import { This_site } from './(pages)/This_site';
-import { Research } from './(pages)/Research';
 
+import loadable from '@loadable/component'
+const Research = loadable(() => import('./(pages)/Research').then(mod => mod.Research), {
+  ssr: false,
+  fallback: <div>Loading...</div>,
+});
 
 export default function Intro() {
   
