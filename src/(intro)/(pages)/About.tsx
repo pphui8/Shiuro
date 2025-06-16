@@ -36,7 +36,8 @@ export const About = () => {
 const WindowsView = () => {
     return (
         <div className={styles.profile_img_container} >
-            <Image priority className={styles.profile_img} src={Profile_img} alt={'profile'} width={200} height={200} />
+            {/* <Image priority className={styles.profile_img} src={Profile_img} alt={'profile'} width={200} height={200} /> */}
+            <img className={styles.profile_img} src={Profile_img.src} alt={'profile'} width={200} height={200} />
             <div className={styles.status} ><i className='mgc_book_6_line' /></div>
             <div className={styles.vcard} >
                 <div className={styles.vcard_fullname} >pphui8</div>
@@ -53,7 +54,8 @@ const WindowsView = () => {
 const MobileView = () => {
     return (
         <div className={styles.mobile_profile} >
-            <Image priority className={styles.profile_img} src={Profile_img} alt={'profile'} width={100} height={100} />
+            {/* <Image priority className={styles.profile_img} src={Profile_img} alt={'profile'} width={100} height={100} /> */}
+            <img className={styles.profile_img} src={Profile_img.src} alt={'profile'} width={100} height={100} />
             <div className={styles.mobile_name_container} >
                 <div className={styles.vcard_fullname} >pphui8</div>
                 <div className={styles.vcard_username} >pphui8</div>

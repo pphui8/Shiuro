@@ -59,7 +59,8 @@ export default function HomePage() {
         </div>
       </div>
       <div className={styles.profile_img}>
-        <Image priority src={Profile_img} alt={'profile'} width={200} height={200}></Image>
+        {/* <Image priority src={Profile_img} alt={'profile'} width={200} height={200}></Image> */}
+        <img src="./profile.jpg" alt="profile" width={200} height={200} />
       </div>
       <div className={styles.bottom_container}>
       {showChild && (
