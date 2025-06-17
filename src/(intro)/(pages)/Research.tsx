@@ -17,9 +17,9 @@ export const Research = () => {
             { id: 'Requirements Engineering', name: 'Requirements Engineering', group: 'se', url: 'https://en.wikipedia.org/wiki/Requirements_engineering', color: '#3366cc' },
             { id: 'Privacy Engineering', name: 'Privacy Engineering', group: 'se', url: 'https://en.wikipedia.org/wiki/Privacy_engineering', color: '#3366cc' },
 
-            { id: 'Privacy Requirements Engineering', name: 'Privacy Requirements Engineering', group: 'se', url: 'https://en.wikipedia.org/wiki/Privacy_requirements_engineering', color: '#3366cc' },
+            { id: 'Privacy Requirements Engineering', name: 'Privacy Requirements Engineering', group: 'se', url: 'https://www.igi-global.com/dictionary/a-survey-of-methodologies-for-protecting-privacy-of-user-data-within-enterprise-information-infrastructure/90864', color: '#3366cc' },
 
-            { id:'Language Models', name: 'Language Models', group: 'ai', url: 'https://en.wikipedia.org/wiki/Language_model', color: '#30f271' },
+            { id:'Language Modeling', name: 'Language Models', group: 'ai', url: 'https://en.wikipedia.org/wiki/Language_model', color: '#30f271' },
             { id: 'Image Generation', name: 'Image Generation', group: 'ai', url: 'https://en.wikipedia.org/wiki/Image_generation', color: '#3af2d0' },
 
             { id: 'Bert', name: 'BERT', group: 'ai', url: 'https://en.wikipedia.org/wiki/BERT_(language_model)', color: '#30f271' },
@@ -40,12 +40,13 @@ export const Research = () => {
             { source: 'Software Engineering', target: 'Privacy Engineering' },
 
             { source: 'Privacy Engineering', target: 'Privacy Requirements Engineering' },
+            { source: 'Requirements Engineering', target: 'Privacy Requirements Engineering' },
 
-            { source: 'Artificial Intelligence', target: 'Language Models' },
+            { source: 'Artificial Intelligence', target: 'Language Modeling' },
             { source: 'Artificial Intelligence', target: 'Image Generation' },
 
-            { source: 'Language Models', target: 'Bert' },
-            { source: 'Language Models', target: 'GPT' },
+            { source: 'Language Modeling', target: 'Bert' },
+            { source: 'Language Modeling', target: 'GPT' },
 
             { source: 'Image Generation', target: 'GANs' },
             { source: 'Image Generation', target: 'Stable Diffusion' },
