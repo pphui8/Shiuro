@@ -19,8 +19,22 @@ import { This_site } from './(pages)/This_site';
 import loadable from '@loadable/component'
 const Research = loadable(() => import('./(pages)/Research').then(mod => mod.Research), {
   ssr: false,
-  fallback: <div>Loading...</div>,
+  fallback: <Loading />
 });
+
+function Loading() {
+  return (
+    <div style={{
+      padding: '1rem',
+      textAlign: 'center',
+      color: '#888',
+      fontSize: '1.2rem',
+      letterSpacing: '0.05em'
+    }}>
+      Loading...
+    </div>
+  );
+}
 
 export default function Intro() {
   
