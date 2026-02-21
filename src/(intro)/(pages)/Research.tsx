@@ -1,14 +1,18 @@
 'use client'
 
 import styles from './Research.module.css'
-import React from 'react';
-import dynamic from 'next/dynamic';
+import React, { useCallback, useMemo, useRef, useState, useEffect } from 'react';
 import * as THREE from 'three';
 import SpriteText from 'three-spritetext';
-import ForceGraph3D from 'react-force-graph-3d';
+import ForceGraph3D, { ForceGraphMethods } from 'react-force-graph-3d';
 
 export const Research = () => {
-    const data = {
+    const fgRef = useRef<ForceGraphMethods>();
+    const [hoverNode, setHoverNode] = useState<any>(null);
+    const [highlightNodes, setHighlightNodes] = useState(new Set());
+    const [highlightLinks, setHighlightLinks] = useState(new Set());
+
+    const data = useMemo(() => ({
         nodes: [
             { id: 'me', name: 'Me', group: 'me', color: '#ff6600' },
             { id: 'Software Engineering', name: 'Software Engineering', group: 'se', url: 'https://en.wikipedia.org/wiki/Software_engineering', color: '#3366cc' },
@@ -56,40 +60,101 @@ export const Research = () => {
             { source: 'GANs', target: 'StyleGAN2' },
             { source: 'GANs', target: 'CycleGAN' },
         ],
+    }), []);
+
+    useEffect(() => {
+        if (fgRef.current) {
+            // Increase repulsion to spread nodes further apart
+            fgRef.current.d3Force('charge')?.strength(-300);
+            fgRef.current.d3Force('link')?.distance(80);
+        }
+    }, []);
+
+    const handleNodeHover = (node: any) => {
+        const newHighlightNodes = new Set();
+        const newHighlightLinks = new Set();
+        
+        if (node) {
+            newHighlightNodes.add(node);
+            data.links.forEach((link: any) => {
+                if (link.source.id === node.id || link.target.id === node.id) {
+                    newHighlightLinks.add(link);
+                    newHighlightNodes.add(link.source);
+                    newHighlightNodes.add(link.target);
+                }
+            });
+        }
+
+        setHighlightNodes(newHighlightNodes);
+        setHighlightLinks(newHighlightLinks);
+        setHoverNode(node || null);
     };
-    
+
+    const nodeThreeObject = useCallback((node: any) => {
+        const isHighlighted = highlightNodes.has(node);
+        if (node.id === 'me') {
+            const imgTexture = new THREE.TextureLoader().load(`./profile.jpg`);
+            imgTexture.colorSpace = THREE.SRGBColorSpace;
+            const material = new THREE.SpriteMaterial({ 
+                map: imgTexture,
+                transparent: true,
+                opacity: hoverNode && !isHighlighted ? 0.2 : 1
+            });
+            const sprite = new THREE.Sprite(material);
+            sprite.scale.set(16, 16, 1);
+            return sprite;
+        } else {
+            const sprite = new SpriteText(node.name || node.id);
+            sprite.color = node.color;
+            sprite.textHeight = 6;
+            sprite.fontFace = "Times New Roman";
+            sprite.fontWeight = 'bold';
+            sprite.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+            sprite.padding = [4, 2];
+            sprite.borderRadius = 2;
+            
+            // Dim non-highlighted nodes when something is hovered
+            if (hoverNode && !isHighlighted) {
+                sprite.color = '#cccccc';
+                sprite.backgroundColor = 'rgba(255, 255, 255, 0.2)';
+            }
+            
+            return sprite;
+        }
+    }, [highlightNodes, hoverNode]);
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Research Interests</h1>
             <ForceGraph3D
+                ref={fgRef}
                 graphData={data}
                 nodeLabel="name"
-                nodeAutoColorBy="group"
                 backgroundColor="#fcf5f7"
-                linkColor={() => '#0ABAB5'}
-                linkWidth={() => 1}
+                
+                // Link styling
+                linkColor={(link: any) => highlightLinks.has(link) ? '#ff6600' : '#0ABAB5'}
+                linkWidth={(link: any) => highlightLinks.has(link) ? 2 : 1}
                 linkOpacity={0.6}
-                nodeThreeObject={(node: { id: string | undefined; color: string; }) => {
-                if( node.id === 'me') {
-                    const imgTexture = new THREE.TextureLoader().load(`./profile.jpg`);
-                    imgTexture.colorSpace = THREE.SRGBColorSpace;
-                    const material = new THREE.SpriteMaterial({ map: imgTexture });
-                    const sprite = new THREE.Sprite(material);
-                    sprite.scale.set(12, 12, 1);
-                    return sprite;
-                } else {
-                    const sprite = new SpriteText(node.id);
-                    sprite.color = node.color;
-                    sprite.textHeight = 8;
-                    sprite.fontFace = "Times New Roman";
-                    return sprite;
-                }
-                }}
+                linkDirectionalParticles={(link: any) => highlightLinks.has(link) ? 4 : 0}
+                linkDirectionalParticleWidth={2}
+
+                // Node styling
+                nodeThreeObject={nodeThreeObject}
+                nodeThreeObjectExtend={false}
+                
                 onNodeClick={(node: any) => {
                     if (node.url) {
                         window.open(node.url, '_blank');
                     }
                 }}
+                onNodeHover={handleNodeHover}
+                
+                // Physics and layout
+                forceEngine="d3"
+                d3AlphaDecay={0.01}
+                d3VelocityDecay={0.1}
+                cooldownTicks={100}
             />
         </div>
     );
