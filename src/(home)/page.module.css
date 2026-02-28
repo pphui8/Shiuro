@@ -30,7 +30,7 @@
 .intro_card {
     height: 200px;
     width: 580px;
-    padding: 0px 0px 50px 60px;
+    padding: 0px 0px 50px 45px;
     user-select: none;
     font-size: 25px;
     font-family: __Manrope_26b30e,__Manrope_Fallback_26b30e,system-ui,-apple-system,PingFang SC,"Microsoft YaHei",Segoe UI,Roboto,Helvetica,noto sans sc,hiragino sans gb,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Not Color Emoji;
@@ -38,8 +38,10 @@
 
 .text_row p {
     display: inline-block;
+    font-size: 23px;
     font-weight: normal;
     margin-top: 10px;
+    margin-right: 10px;
 }
 
 .text_row .name {
@@ -48,6 +50,7 @@
 }
 
 .text_row .profession {
+    display: inline-block;
     font-weight: bolder;
     text-wrap: nowrap;
     padding: 0px 4px 4px 4px;
