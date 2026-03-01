@@ -38,7 +38,7 @@
 
 .text_row p {
     display: inline-block;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: normal;
     margin-top: 10px;
     margin-right: 10px;
@@ -46,7 +46,6 @@
 
 .text_row .name {
     font-weight: bolder;
-    margin-left: 10px;
 }
 
 .text_row .profession {
@@ -54,7 +53,6 @@
     font-weight: bolder;
     text-wrap: nowrap;
     padding: 0px 4px 4px 4px;
-    margin-left: 5px;
 }
 
 .text_row .profession:hover {
