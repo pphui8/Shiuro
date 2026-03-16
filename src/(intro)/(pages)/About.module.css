@@ -94,6 +94,35 @@
     transform: translateY(15%);
 }
 
+.windowsViewWrapper {
+    display: inline-block;
+}
+
+.mobileViewWrapper {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .windowsViewWrapper {
+        display: none;
+    }
+
+    .mobileViewWrapper {
+        display: block;
+    }
+
+    .mobile_profile .vcard {
+        transform: translateY(-13px);
+    }
+
+    .aboutme_article {
+        transform: translateY(0%);
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .aboutme_article p {
     line-height: 1.5;
     word-wrap: break-word;

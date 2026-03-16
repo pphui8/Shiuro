@@ -22,15 +22,16 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(57,197,187);
     background: linear-gradient(0deg, rgba(57,197,187,0.1) 0%, rgba(111,211,204,0.15) 6%, rgba(244,244,245,1) 100%);
+    position: relative;
 }
 
 .intro_card {
-    height: 200px;
+    min-height: 200px;
     width: 580px;
-    padding: 0px 0px 50px 45px;
+    padding: 0px 0px 50px 6%;
     user-select: none;
     font-size: 25px;
     font-family: __Manrope_26b30e,__Manrope_Fallback_26b30e,system-ui,-apple-system,PingFang SC,"Microsoft YaHei",Segoe UI,Roboto,Helvetica,noto sans sc,hiragino sans gb,"sans-serif",Apple Color Emoji,Segoe UI Emoji,Not Color Emoji;
@@ -68,7 +69,6 @@
 }
 
 .profile_img {
-    height: 200px;
     width: 200px;
     padding: 0px 60px 50px 0px;
     user-select: none;
@@ -79,17 +79,19 @@
     border: 1px solid #ddd;
     user-select: none;
     -webkit-user-drag: none;
+    max-width: 100%;
+    height: auto;
 }
 
 .icon_container {
-    height: 40px;
+    height: auto;
     width: 100%;
     padding-top: 10px;
 }
 
 .icon_container a {
     display: inline-block;
-    height: 100%;
+    height: 40px;
     width: 40px;
     background-color: #000000;
     border-radius: 50%;
