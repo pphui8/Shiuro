@@ -191,3 +191,14 @@
     width: 100%;
     height: 100%;
 }
+
+@media (max-width: 768px) {
+    .windows main {
+        align-items: flex-start;
+    }
+
+    .windows_container {
+        height: auto;
+        min-height: 100%;
+    }
+}
