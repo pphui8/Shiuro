@@ -5,6 +5,7 @@ import React, { useCallback, useMemo, useRef, useState, useEffect } from 'react'
 import * as THREE from 'three';
 import SpriteText from 'three-spritetext';
 import ForceGraph3D, { ForceGraphMethods } from 'react-force-graph-3d';
+import Profile_img from '../../../public/profile.jpg'
 
 export const Research = () => {
     const fgRef = useRef<ForceGraphMethods>();
@@ -93,7 +94,7 @@ export const Research = () => {
     const nodeThreeObject = useCallback((node: any) => {
         const isHighlighted = highlightNodes.has(node);
         if (node.id === 'me') {
-            const imgTexture = new THREE.TextureLoader().load(`./profile.jpg`);
+            const imgTexture = new THREE.TextureLoader().load(Profile_img.src);
             imgTexture.colorSpace = THREE.SRGBColorSpace;
             const material = new THREE.SpriteMaterial({ 
                 map: imgTexture,

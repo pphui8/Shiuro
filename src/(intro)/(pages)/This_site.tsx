@@ -1,6 +1,5 @@
 import styles from './This_site.module.css'
 import Image from 'next/image';
-import GitHubIcon from '/public/github.png';
 
 
 export const This_site = () => {

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: url("../../public/cursor.png"), default;
+    cursor: url("/cursor.png"), default;
     list-style: none;
 }
 
