@@ -11,7 +11,7 @@
 
 .center_container {
     position: relative;
-    height: 100%;
+    min-height: 100%;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;

@@ -9,22 +9,34 @@ export const About = () => {
         <div className={styles.container} >
             <div className={styles.windowsViewWrapper}>
                 <WindowsView />
+                <article className={styles.aboutme_article}>
+                    <p className={styles.filepath}><Link href={'https://github.com/pphui8'}>pphui8</Link> / <Link href={'https://github.com/pphui8/pphui8'}>README.md</Link></p>
+                    <p className={styles.hi}>hi, I`m pphui8.</p>
+                    <hr className={styles.line} />
+                    <p>👨‍🎓 M.S. in Software Engineering && Artificial Intelligence</p>
+                    <p>💬 English && 日本語 && 中文</p>
+                    <p>🧐 Research area: Knowledge Intensive Software Engineering</p>
+                    <p>🍚 Favorite food: beef rice noodle and curry rice. コーラ最高</p>
+                    <p>🎏 Welcome to my <Link href={'https://pphui8.com'}>Website</Link></p>
+                    <p>👨‍💻 🦀 || Go || TypeScipt || Cpp || Python</p>
+                    <p>🎹 Loving piano, fan of <Link href={'https://www.youtube.com/c/Animenzzz'}>Animenzzz</Link></p>
+                </article>
             </div>
             <div className={styles.mobileViewWrapper}>
                 <MobileView />
+                <article className={styles.aboutme_article}>
+                    <p className={styles.filepath}><Link href={'https://github.com/pphui8'}>pphui8</Link> / <Link href={'https://github.com/pphui8/pphui8'}>README.md</Link></p>
+                    <p className={styles.hi}>hi, I`m pphui8.</p>
+                    <hr className={styles.line} />
+                    <p>👨‍🎓 M.S. in Software Engineering && Artificial Intelligence</p>
+                    <p>💬 English && 日本語 && 中文</p>
+                    <p>🧐 Research area: Knowledge Intensive Software Engineering</p>
+                    <p>🍚 Favorite food: beef rice noodle and curry rice. コーラ最高</p>
+                    <p>🎏 Welcome to my <Link href={'https://pphui8.com'}>Website</Link></p>
+                    <p>👨‍💻 🦀 || Go || TypeScipt || Cpp || Python</p>
+                    <p>🎹 Loving piano, fan of <Link href={'https://www.youtube.com/c/Animenzzz'}>Animenzzz</Link></p>
+                </article>
             </div>
-            <article className={styles.aboutme_article}>
-                <p className={styles.filepath}><Link href={'https://github.com/pphui8'}>pphui8</Link> / <Link href={'https://github.com/pphui8/pphui8'}>README.md</Link></p>
-                <p className={styles.hi}>hi, I`m pphui8.</p>
-                <hr className={styles.line} />
-                <p>👨‍🎓 M.S. in Software Engineering && Artificial Intelligence</p>
-                <p>💬 English && 日本語 && 中文</p>
-                <p>🧐 Research area: Knowledge Intensive Software Engineering</p>
-                <p>🍚 Favorite food: beef rice noodle and curry rice. コーラ最高</p>
-                <p>🎏 Welcome to my <Link href={'https://pphui8.com'}>Website</Link></p>
-                <p>👨‍💻 🦀 || Go || TypeScipt || Cpp || Python</p>
-                <p>🎹 Loving piano, fan of <Link href={'https://www.youtube.com/c/Animenzzz'}>Animenzzz</Link></p>
-            </article>
         </div>
     );
 };
