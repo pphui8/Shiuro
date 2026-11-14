@@ -6,8 +6,8 @@
     align-items: center;
     align-content: center;
     height: 100vh;
-    background: rgb(255,250,218);
-    background: linear-gradient(0deg, rgba(216,255,167,0.13) 20%, rgba(103,209,194,0) 49%, rgba(57,197,187,0.1) 100%);
+    background-color: var(--intro-background-color);
+    background-image: var(--intro-background-image);
 }
 
 .windows {

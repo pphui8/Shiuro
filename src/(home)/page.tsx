@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link';
 import styles from './page.module.css'
 import Profile_img from '../../public/profile.jpg'
 import { useEffect, useState } from 'react';
@@ -39,22 +38,22 @@ export default function HomePage() {
         </div>
         <div className={styles.icon_container}>
           <Popover placement='bottomLeft' content="Github" >
-            <Link href="https://github.com/pphui8" aria-label='Github'><i className='mgc_github_line'/></Link>
+            <a href="https://github.com/pphui8" aria-label='Github'><i className='mgc_github_line'/></a>
           </Popover>
           <Popover placement='bottomLeft' content="Email" >
-            <Link href="mailto:jh1216595344@gmail.com" aria-label='Email'><i className='mgc_mail_line'/></Link>
+            <a href="mailto:jh1216595344@gmail.com" aria-label='Email'><i className='mgc_mail_line'/></a>
           </Popover>
           <Popover placement='bottomLeft' content="Twitter" >
-            <Link href="https://twitter.com/pphui8" aria-label='Twitter'><i className='mgc_twitter_line'/></Link>
+            <a href="https://twitter.com/pphui8" aria-label='Twitter'><i className='mgc_twitter_line'/></a>
           </Popover>
           <Popover placement='bottomLeft' content="Instagram" >
-            <Link href="https://www.instagram.com/pphuihui8/" aria-label='Instagram'><i className='mgc_ins_line'/></Link>
+            <a href="https://www.instagram.com/pphuihui8/" aria-label='Instagram'><i className='mgc_ins_line'/></a>
           </Popover>
           <Popover placement='bottomLeft' overlayInnerStyle={{ padding: 0 }} content={<QRCode value='https://pphui8.com' bordered={false} />}>
-            <Link href="#" aria-label='QRCode'><i className='mgc_qrcode_2_line'/></Link>
+            <a href="#" aria-label='QRCode'><i className='mgc_qrcode_2_line'/></a>
           </Popover>
           <Popover placement='bottomLeft' content="Telegram" >
-            <Link href="https://t.me/pphui8" aria-label='Telegram'><i className='mgc_telegram_line' /></Link>
+            <a href="https://t.me/pphui8" aria-label='Telegram'><i className='mgc_telegram_line' /></a>
           </Popover>
         </div>
       </div>

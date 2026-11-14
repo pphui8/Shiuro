@@ -1,6 +1,7 @@
 import './globals.css'
 import 'mingcute_icon/font/Mingcute.css'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: {
@@ -61,7 +62,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script id="time-based-background" strategy="beforeInteractive">
+          {`(() => {
+            const hour = new Date().getHours();
+            let period = 'night';
+
+            if (hour >= 5 && hour < 8) {
+              period = 'sunrise';
+            } else if (hour >= 8 && hour < 17) {
+              period = 'day';
+            } else if (hour >= 17 && hour < 20) {
+              period = 'sunset';
+            }
+
+            document.documentElement.dataset.timePeriod = 'sunrise';
+          })();`}
+        </Script>
+      </head>
       <body>{children}</body>
     </html>
   )

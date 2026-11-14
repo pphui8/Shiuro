@@ -5,6 +5,35 @@
     list-style: none;
 }
 
+:root {
+    --home-background-color: #fff;
+    --home-background-image: none;
+    --intro-background-color: rgb(255, 250, 218);
+    --intro-background-image: linear-gradient(0deg, rgba(216,255,167,0.13) 20%, rgba(103,209,194,0) 49%, rgba(57,197,187,0.1) 100%);
+}
+
+html[data-time-period='day'] {
+    --home-background-color: #e8f7f5;
+    --home-background-image: linear-gradient(0deg, rgba(57,197,187,0.08) 0%, rgba(111,211,204,0.1) 6%, rgba(244,244,245,1) 100%);
+    --intro-background-color: #e8f7f5;
+    --intro-background-image: linear-gradient(0deg, rgba(219,224,230,0.13) 20%, rgba(211,216,223,0) 49%, rgba(218,223,229,0.1) 100%);
+}
+
+html[data-time-period='night'] {
+    --home-background-color: #d6dff1;
+    --home-background-image: linear-gradient(0deg, rgba(213,219,226,0.1) 0%, rgba(222,226,232,0.15) 6%, rgba(240,241,243,1) 100%);
+    --intro-background-color: #d6dff1;
+    --intro-background-image: linear-gradient(0deg, rgba(219,224,230,0.13) 20%, rgba(211,216,223,0) 49%, rgba(218,223,229,0.1) 100%);
+}
+
+html[data-time-period='sunrise'],
+html[data-time-period='sunset'] {
+    --home-background-color: #fff2dd;
+    --home-background-image: linear-gradient(0deg,rgba(255, 253, 212, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    --intro-background-color: #fff2dd;
+    --intro-background-image: linear-gradient(180deg,rgba(255, 253, 212, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
 html {
     height: 100%;
 }

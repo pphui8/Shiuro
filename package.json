@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
+    "dev": "next dev --webpack -H 0.0.0.0",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "license": "MIT License",
   "dependencies": {
@@ -15,12 +15,10 @@
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
     "antd": "^5.12.8",
-    "eslint": "8.56.0",
-    "eslint-config-next": "14.0.4",
     "framer-motion": "^10.16.16",
     "mingcute_icon": "^2.9.3",
     "nanoid": "^5.0.4",
-    "next": "^14.2.30",
+    "next": "^16.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-force-graph-3d": "^1.27.0",
@@ -29,6 +27,8 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.4.6",
     "@types/loadable__component": "^5.13.9",
     "@types/three": "^0.177.0"
   }

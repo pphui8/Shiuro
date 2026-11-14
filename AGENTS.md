@@ -57,3 +57,13 @@ The project uses a hybrid architecture where the Next.js App Router serves as th
 - **Import Aliases:** Use the `~/*` alias to reference the `src/` directory (configured in `tsconfig.json`).
 - **3D Components:** The `Research` component uses `react-force-graph-3d` and must be loaded via `@loadable/component` with `ssr: false` to avoid hydration issues.
 - **State Management:** Navigation within the `Intro` section is managed locally via `useState` and doesn't rely on URL synchronization (simulating an OS window environment).
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+## This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
