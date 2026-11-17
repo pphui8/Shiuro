@@ -77,7 +77,7 @@ export default function RootLayout({
               period = 'sunset';
             }
 
-            document.documentElement.dataset.timePeriod = 'period';
+            document.documentElement.dataset.timePeriod = period;
           })();`}
         </Script>
       </head>
